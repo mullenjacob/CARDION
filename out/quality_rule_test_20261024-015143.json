@@ -1,0 +1,33 @@
+{
+  "rule": {
+    "min_peak_ratio": 8,
+    "agree_bpm": 8,
+    "min_agree": 2,
+    "voters": [
+      "rgb_green",
+      "rgb_pos",
+      "rgb_chrom"
+    ],
+    "val": {
+      "coverage": 0.3527037933817595,
+      "mae": 2.9752479023646075,
+      "within5": 0.9016018306636155,
+      "n_shown": 437,
+      "n": 1239
+    },
+    "target_within5": 0.9
+  },
+  "applied": {
+    "coverage": 0.4056761268781302,
+    "mae": 2.372290809327847,
+    "within5": 0.8580246913580247,
+    "n_shown": 486,
+    "n": 1198
+  },
+  "ungated_mae": {
+    "rgb_green": 14.743071786310518,
+    "rgb_pos": 5.778797996661101,
+    "rgb_chrom": 9.33347245409015
+  },
+  "results": "test"
+}

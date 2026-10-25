@@ -1,0 +1,101 @@
+# CARDION default configuration. Every script reads this; CLI `--set a.b=value` overrides it.
+seed: 1337
+device: cpu            # cpu | cuda
+out_dir: out
+data_root: data
+
+rppg:
+  band_hz: [0.7, 4.0]        # bandpass for pulse extraction
+  hr_band_hz: [0.75, 3.0]    # FFT peak search band (45-180 BPM)
+  hr_window_s: 10.0          # sliding window for HR (all methods, apples-to-apples)
+  hr_stride_s: 1.0
+  hr_method: shs             # peak | shs (sub-harmonic summation); chosen on validation data only
+  ref_min_peak_ratio: 4.0    # reference-PPG windows below this spectral peak ratio are excluded for every method
+  pos_window_s: 1.6          # POS / CHROM internal window (Wang 2017)
+  roi: skin                  # skin | box  (landmark skin mask vs detector box)
+
+face:
+  landmarker_model: models/face_landmarker.task
+  landmarker_url: https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
+  redetect_every: 15         # frames between landmark refreshes (live demo / ROI.mask holds in between)
+  live_detect_every: 6       # live app: landmark detections every N frames (crop box is smoothed in between)
+  crop_detect_every: 5       # dataset preprocessing: detections per frame, crop box interpolated between them
+
+datasets:
+  ubfc_root: data/raw/ubfc/DATASET_2
+  pure_root: data/raw/pure
+  scamps_root: data/raw/scamps
+  mcd_root: data/raw/mcd_rppg
+  mcd:
+    start_s: 5.0             # skip the first seconds of each 3-minute recording
+    seconds: 60.0            # excerpt length (same as a UBFC clip)
+  author_root: data/raw/author
+  cache_dir: data/cache
+  splits_dir: data/splits
+  split_fracs: [0.6, 0.2, 0.2]   # train / val / test, by subject
+  synthetic:
+    n_subjects: 30
+    clip_seconds: 60
+    fps: 30
+    size: 96
+    noise_sigma_range: [0.5, 2.5]   # 8-bit sensor noise std in counts
+    amp_scale: 1.0                  # multiplies the simulated pulsatile amplitude (real MCD-rPPG video is roughly 0.2)
+    flicker_amp: 0.0                # relative amplitude of global illumination flicker (aliased mains), 0 = off
+    flicker_hz: 10.0
+
+dvs:
+  backend: analytic          # analytic | v2e
+  crop_size: 64              # face crop resolution fed to the emulator
+  thresholds: [0.005, 0.01, 0.02, 0.05, 0.1, 0.2]   # log-intensity contrast thresholds
+  threshold: 0.02            # default operating point
+  sigma_threshold: 0.2       # relative per-pixel threshold mismatch (analytic) / absolute (v2e: 0.03)
+  refractory_s: 0.001
+  leak_hz: 0.05
+  shot_noise_hz: 0.05
+  cutoff_hz: 0.0             # photoreceptor low-pass; 0 disables
+  prefilter_hz: 0.0          # causal 4th-order low-pass of per-pixel log intensity before the contrast detector (flicker suppression); 0 = off
+  upsample: 4                # linear temporal interpolation factor between input frames
+  log_eps: 1.0               # log(I + eps) with I in 0..255
+
+events:
+  n_bins: 8
+  window_ms: 33.3
+  height: 32
+  width: 32
+
+event_rppg:
+  window_ms: [33.3, 10.0]    # frame-rate window and fine window (latency study)
+
+snn:
+  hidden: 64
+  beta: 0.9
+  input_scale: 4.0            # tanh soft-clip of event counts (real compressed video has far higher event rates than the simulator)
+  n_layers: 3
+  lr: 0.002
+  epochs: 20
+  batch_size: 16
+  seq_len: 300
+
+eval:
+  bootstrap_n: 2000
+  ci: 0.95
+
+app:
+  threshold: 0.05            # emulated contrast threshold used by the live app
+  models_dir: models
+  port: 8765
+  sessions_dir: sessions
+  validation_dir: validation_data   # accuracy-validation sessions (anonymous participant codes; git-ignored)
+  torch_threads: 2           # CPU threads for the small SNN/ANN (default 12-16 burned 5-9 cores and was slower; outputs are bit-identical)
+  quality:                   # reliability gates (calibrated on validation data only)
+    min_seconds: 8.0
+    min_face_fraction: 0.8
+    max_motion: 0.04
+    min_luma: 35.0
+    max_luma: 235.0
+    max_luma_var: 0.06
+    min_peak_ratio: 3.0
+    agree_bpm: 6.0
+    min_agree: 2
+
+

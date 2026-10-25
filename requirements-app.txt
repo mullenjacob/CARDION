@@ -1,0 +1,9 @@
+# CARDION app runtime (pinned). Dev/research extras are in requirements.txt.
+numpy==2.4.6
+scipy==1.17.1
+opencv-contrib-python==5.0.0.93
+mediapipe==1.1.1
+torch==2.14.1
+snntorch==1.0.0
+pyyaml==6.0.3
+matplotlib==3.11.2

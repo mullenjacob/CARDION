@@ -1,0 +1,80 @@
+{
+  "verified_on": "2026-10-25",
+  "method": "Metadata: Crossref / arXiv APIs via scripts/fetch_bib.py. Reported results: read from the arXiv abstract/HTML page of each paper by the author of this repository on the verification date; numbers are copied exactly. Items whose full text could not be read are marked and no result is attributed to them.",
+  "caveat": "Published numbers come from different datasets, subjects, cameras, frame rates, window lengths, reference devices and rules for excluding measurements. They are contextual, not a ranking.",
+  "entries": {
+    "moustafa": {
+      "bibkey": "moustafa2025event", "status": "arXiv preprint (v2 24 Jun 2025); no venue listed", "arxiv": "2505.09529",
+      "sensor": "real event camera (Prophesee, 1280x720) + RGB camera (Brio, 800x600, 30 fps)", "dataset": "proprietary; 64 subjects (45 male, 19 female), seated, stationary, eyes closed then open; ECG reference at 1 kHz",
+      "method": "supervised, modified TS-CAN (DeepPhys-style) on 2-D event frames (polarity accumulation per window; 144x144)", "split": "44 subjects train; 10 randomly selected for validation and testing (subject-level; text does not say 'subject-disjoint')",
+      "reported": {"n_subjects": 64, "rgb_30fps_mae": 1.89, "rgb_30fps_rmse": 2.92, "event_30fps_mae": 2.33, "event_30fps_rmse": 3.32, "event_60fps_mae": 2.18, "event_60fps_rmse": 2.54, "event_120fps_mae": 1.58, "event_120fps_rmse": 2.13, "event_30fps_pearson": 0.93, "rgb_30fps_pearson": 0.95},
+      "limitations_stated": "proprietary dataset; stationary subjects only; only the event-frame representation studied; event de-noising not integrated"
+    },
+    "jagtap": {
+      "bibkey": "jagtap2023hr", "status": "arXiv preprint (Sep 2023); no venue listed", "arxiv": "2309.11891",
+      "sensor": "real event camera (Prophesee EVK4, 1280x720), wrist", "dataset": "25 participants, 46 recordings; dataset on Figshare (doi:10.6084/m9.figshare.24039501.v1); reference from conventional methods / smartwatch",
+      "method": "unsupervised: per-tile dominant frequency (periodogram of 5x5 pixel tiles, 1/50 s bins) fused into one pulse estimate",
+      "reported": {"participants": 25, "recordings": 46, "pulse_detected": 40, "resting_mae": 1.478, "resting_rmse": 2.043, "elevated_mae": 1.706, "elevated_rmse": 2.262, "within_1bpm_of_detected": 24},
+      "limitations_stated": "flicker, hand tremor (3 of 6 failures), lighting variation, possible delay between exercise and manual watch reading"
+    },
+    "empd": {
+      "bibkey": "feng2026empd", "status": "arXiv preprint (17 Mar 2026); dataset on Zenodo (CC BY 4.0)", "arxiv": "2603.26699",
+      "sensor": "real event camera (Prophesee EVK4) + industrial RGB camera; 660 nm laser illumination aimed at the radial artery (wrist), not a face", "dataset": "193 valid records, 83 subjects, 40-110 BPM, rest and post-exercise; finger-clip oximeter reference at 60 Hz; 9 archive parts (first part 46.4 GB)",
+      "reported": {"records": 193, "subjects": 83, "hr_min": 40, "hr_max": 110, "record_seconds": 68},
+      "limitations_stated": "the abstract page reports no benchmark errors"
+    },
+    "fusion_e2pulse": {
+      "bibkey": "feng2026fusion", "status": "arXiv preprint (14 Jun 2026); listed as accepted to MICCAI 2026", "arxiv": "2606.15597",
+      "sensor": "event camera + RGB (dataset not named on the abstract page)", "method": "event-RGB fusion network for pulse-wave reconstruction",
+      "reported": {"hr_mae": 0.78, "waveform_correlation": 0.89},
+      "limitations_stated": "not assessed (abstract only)"
+    },
+    "spiking_physformer": {
+      "bibkey": "liu2025spikingphysformer", "status": "peer reviewed: Neural Networks 185:107128 (2025)", "doi": "10.1016/j.neunet.2025.107128",
+      "sensor": "ordinary RGB video frames (no event camera)", "dataset": "PURE, UBFC-rPPG, UBFC-Phys, MMPD",
+      "method": "hybrid ANN patch embedding + spiking transformer blocks + ANN predictor; claimed by its authors as the first use of SNNs in rPPG",
+      "reported": {"total_power_reduction_percent_vs_physformer": 10.1, "arxiv_total_power_reduction_percent_vs_physformer": 12.4, "transformer_block_power_reduction_factor": 12.2},
+      "version_note": "Published journal abstract (read on the authors' lab page, which lists the DOI): 10.1 % total power reduction vs PhysFormer, transformer block reduced by a factor of 12.2. arXiv v1 and v4 abstracts (read directly): 12.4 % total, same 12.2x for the transformer block. The paper cites the journal version, so 10.1 % is used; the 12.4 % belongs to the preprint. 'Total' = whole model; the 12.2x applies only to the spiking transformer block. ScienceDirect and ACM pages returned HTTP 403, so the journal abstract was confirmed through the authors' page and a search-engine copy of the publisher abstract.",
+      "limitations_stated": "abstract reports comparable accuracy to PhysFormer without numbers on the pages read; how power was computed was not visible"
+    },
+    "rppg_toolbox_unsupervised": {
+      "bibkey": "liu2023rppgtoolbox", "status": "arXiv preprint of NeurIPS 2023 Datasets and Benchmarks paper; numbers from Appendix G, Table 7 of the arXiv version", "arxiv": "2210.00716",
+      "sensor": "RGB cameras", "dataset": "UBFC-rPPG and PURE (PURE: 10 subjects, 6 recordings each)",
+      "reported": {"ubfc_pos_mae": 4.08, "ubfc_chrom_mae": 4.06, "ubfc_green_mae": 19.73, "pure_pos_mae": 3.67, "pure_chrom_mae": 5.77, "pure_green_mae": 10.09},
+      "note": "video-level HR from the whole filtered signal with a 0.75-2.5 Hz band-pass; the main-paper Table 2 differs slightly from the appendix; different protocol from our 10 s windows with a validity rule"
+    },
+    "nowara": {
+      "bibkey": "nowara2020skin", "status": "peer reviewed workshop paper (CVPRW 2020)", "doi": "10.1109/CVPRW50498.2020.00150",
+      "reported": {"subjects": 73, "videos_over": 400}, "finding": "heart-rate measurement works across skin types under some conditions but average performance drops significantly for the darkest skin type, with a smaller drop for women"
+    },
+    "mcduff_compression": {
+      "bibkey": "mcduff2017compression", "status": "peer reviewed (IEEE FG 2017)", "doi": "10.1109/FG.2017.17",
+      "reported": {"participants": 25}, "finding": "first systematic analysis of video compression (x264/x265 at several constant-rate-factor levels) for imaging PPG, with stationary and head-motion tasks; details of the effect sizes were not read"
+    },
+    "dampfhoffer": {
+      "bibkey": "dampfhoffer2023", "status": "peer reviewed (IEEE TETCI 2023)", "doi": "10.1109/TETCI.2022.3214509",
+      "finding": "SNNs with integrate-and-fire neurons can compete with efficient digital ANN implementations only when spike sparsity is very high (reported range 0.15-1.38 spikes per synapse per inference depending on the ANN implementation); memory traffic matters",
+      "reported": {"spikes_per_synapse_low": 0.15, "spikes_per_synapse_high": 1.38}
+    },
+    "gehrig_video2events": {
+      "bibkey": "gehrig2020video2events", "status": "peer reviewed (CVPR 2020)", "doi": "10.1109/CVPR42600.2020.00364",
+      "finding": "models trained on events synthesised from ordinary video generalise to real event data for object recognition and semantic segmentation (not for physiological signals)"
+    },
+    "hu_v2e": {
+      "bibkey": "hu2021v2e", "status": "peer reviewed workshop paper (CVPRW 2021)", "doi": "10.1109/CVPRW53098.2021.00144",
+      "finding": "adds pixel-level threshold mismatch, finite intensity-dependent bandwidth and intensity-dependent noise to video-to-events conversion; authors argue earlier idealised pixel models are invalid for real cameras"
+    },
+    "elgendi_sqi": {
+      "bibkey": "elgendi2024sqi", "status": "peer reviewed (npj Biosensing 2024)", "doi": "10.1038/s44328-024-00002-1",
+      "finding": "proposes a single signal-to-noise-based quality index for rPPG with a recommended threshold; full text not read"
+    },
+    "bent": {
+      "bibkey": "bent2020", "status": "peer reviewed (npj Digital Medicine 2020)", "doi": "10.1038/s41746-020-0226-6",
+      "finding": "investigates sources of inaccuracy in wearable optical heart-rate sensors including skin tone and activity; used here only to caution about consumer wearables as references"
+    },
+    "shcherbina": {
+      "bibkey": "shcherbina2017", "status": "peer reviewed (J Pers Med 2017)", "doi": "10.3390/jpm7020003",
+      "reported": {"volunteers": 60, "devices": 7}, "finding": "Apple Watch had the lowest overall error among seven wrist-worn devices; error was higher for darker skin tone, higher BMI, males and walking"
+    }
+  }
+}

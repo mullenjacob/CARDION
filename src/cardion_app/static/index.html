@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CARDION</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="heart">&#9829;</span> CARDION <small>contactless heart rate &middot; simulated neuromorphic events</small></div>
+  <div class="pills">
+    <a class="pill navlink" href="/validate" title="Compare CARDION with an Apple Watch or another reference monitor and get an accuracy report">Validation mode &rarr;</a>
+    <span class="pill warn" title="No event-camera hardware is used. Events are computed from your normal camera video.">Simulated events &mdash; not an event camera</span>
+    <span class="pill" title="Research prototype">Not a medical device</span>
+  </div>
+</header>
+
+<main>
+  <section class="left">
+    <div class="card videos">
+      <div class="vwrap"><img id="rgbImg" alt="Camera preview" src="" /><svg id="overlay" class="overlay hidden" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><g id="ovMirror"><rect id="ovTarget" rx="3"/><g id="ovOthers"></g><rect id="ovFace" rx="2"/></g></svg>
+        <div id="gStage" class="gstage hidden"></div>
+        <div id="guideBanner" class="gbanner hidden" role="status" aria-live="polite"><span id="gIcon" class="gicon" aria-hidden="true"></span><span id="gText"></span></div>
+        <div id="edgeArrow" class="edgearrow hidden" aria-hidden="true"></div>
+        <div id="gProg" class="gprog hidden" aria-hidden="true"><i></i></div>
+        <div class="vlabel" id="vlabel">Camera / analysed face</div><div id="placeholder" class="placeholder">Pick a source below and press <b>Start</b></div></div>
+      <div class="vwrap small"><img id="evImg" alt="Event view" src="" /><div class="vlabel">Simulated events (red = brighter, blue = darker)</div></div>
+    </div>
+
+    <div class="card controls">
+      <div class="seg" id="srcSeg">
+        <button data-src="camera" class="on">Live camera</button>
+        <button data-src="video">Video file</button>
+        <button data-src="demo">Built-in demo</button>
+      </div>
+      <div id="panel-camera" class="panel">
+        <label>Camera <select id="camSel"></select></label>
+        <button id="camScan" class="ghost">Rescan</button>
+        <button id="camTest" class="ghost" title="Opens the camera for about 20 seconds and checks frames, face tracking and the pulse pipeline">Test my camera</button>
+        <span id="camMsg" class="muted"></span>
+      </div>
+      <div id="camReport" class="camreport hidden"></div>
+      <div id="panel-video" class="panel hidden">
+        <label class="filebtn">Choose video&hellip;<input id="vidFile" type="file" accept="video/*,.avi,.mp4,.mov,.mkv"></label>
+        <label>Speed <select id="speedSel"><option value="1">Real time</option><option value="4">4&times;</option><option value="0">As fast as possible</option></select></label>
+        <span id="vidMsg" class="muted"></span>
+      </div>
+      <div id="panel-demo" class="panel hidden">
+        <label>Simulated heart rate <select id="demoBpm"><option>55</option><option>65</option><option selected>72</option><option>90</option><option>110</option></select> BPM</label>
+        <span class="muted">A generated face with a known pulse &mdash; works with no camera.</span>
+      </div>
+      <div class="row">
+        <button id="startBtn" class="primary">Start</button>
+        <button id="stopBtn" class="ghost" disabled>Stop</button>
+        <label class="inline" title="The simulated event sensor, event estimators and neural networks are the heaviest part. Switch off on slow computers."><input type="checkbox" id="evToggle" checked> event &amp; neural methods</label>
+        <span id="msg" class="muted"></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Methods on the same input</h3>
+      <table id="methods"><thead><tr><th>Method</th><th>BPM</th><th>Signal</th><th>Compute</th></tr></thead><tbody id="methodsBody"></tbody></table>
+      <p class="muted small" id="costNote"></p>
+    </div>
+  </section>
+
+  <section class="right">
+    <div class="card bpm">
+      <div class="bpmrow">
+        <div class="bpmbox"><div id="bpm" class="bignum stale">&mdash;</div><div class="unit">beats per minute</div></div>
+        <div class="statuswrap">
+          <div id="status" class="badge">Waiting</div>
+          <div id="bpmState" class="bpmstate" role="status" aria-live="polite"></div>
+          <div id="spread" class="muted"></div>
+          <div id="stability" class="muted small"></div>
+          <div id="lastOk" class="muted small"></div>
+        </div>
+      </div>
+      <ol id="steps" class="steps" aria-label="Measurement progress"></ol>
+      <div id="collectBar" class="collectbar hidden" aria-hidden="true"><i></i></div>
+      <div id="collectTxt" class="muted small"></div>
+      <div id="why" class="why" aria-live="polite"></div>
+      <div id="notice" class="notice hidden"></div>
+      <div id="truth" class="truth hidden"></div>
+    </div>
+
+    <div class="card">
+      <h3>Measurement quality <small>(each item is measured separately; good framing alone does not make a pulse reading accurate)</small></h3>
+      <ul id="checks" class="checks"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Pulse waveforms <small>(last 10 s, normalised)</small></h3>
+      <canvas id="wave" width="640" height="190"></canvas>
+      <div id="legend" class="legend"></div>
+    </div>
+
+    <div class="card">
+      <h3>Heart-rate history</h3>
+      <canvas id="hist" width="640" height="170"></canvas>
+    </div>
+
+    <div class="card rec">
+      <h3>Record &amp; export</h3>
+      <div class="row">
+        <button id="recBtn" class="ghost">&#9679; Start recording</button>
+        <label class="inline"><input type="checkbox" id="recVideo"> save annotated video</label>
+        <button id="openBtn" class="ghost">Open sessions folder</button>
+      </div>
+      <div id="sessions" class="sessions"></div>
+    </div>
+  </section>
+</main>
+<footer id="foot"></footer>
+<script src="/static/shared.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

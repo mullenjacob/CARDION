@@ -1,0 +1,1162 @@
+{
+  "dataset": "mcd",
+  "seed": 1337,
+  "fracs": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "n_subjects": 60,
+  "split": {
+    "train": [
+      "1541",
+      "1932",
+      "2022",
+      "2751",
+      "2895",
+      "2907",
+      "2948",
+      "3077",
+      "3254",
+      "3420",
+      "3529",
+      "3593",
+      "3700",
+      "4187",
+      "4430",
+      "4488",
+      "4532",
+      "4571",
+      "5031",
+      "5156",
+      "5332",
+      "5734",
+      "6066",
+      "6425",
+      "7520",
+      "7576",
+      "7748",
+      "7927",
+      "8384",
+      "8563",
+      "8874",
+      "9115",
+      "9146",
+      "9163",
+      "9282",
+      "9825"
+    ],
+    "val": [
+      "2110",
+      "2527",
+      "3150",
+      "3448",
+      "3656",
+      "4225",
+      "4937",
+      "7231",
+      "7568",
+      "7637",
+      "8772",
+      "9286"
+    ],
+    "test": [
+      "1097",
+      "1399",
+      "1981",
+      "4087",
+      "4397",
+      "5223",
+      "5644",
+      "7539",
+      "7769",
+      "8370",
+      "8412",
+      "8834"
+    ]
+  },
+  "files": {
+    "video/1097_FullHDwebcam_before.avi": {
+      "sha256": "baa3b98ef0c04770169ae5977f3987c8f6ef6ee39b79566f9c2fe59c9cb9cfa7"
+    },
+    "ppg_sync/1097_FullHDwebcam_before.txt": {
+      "sha256": "b25682c42ee5a735978cd287e428743fc48cf311065e1affed017c9042dba9de"
+    },
+    "meta/1097_FullHDwebcam_before.txt": {
+      "sha256": "ba530e32807b94544cca78c17c6291bba09a3fc86e3d8dd7d2760c414cfd8444"
+    },
+    "video/1097_FullHDwebcam_after.avi": {
+      "sha256": "9470b55ec56e9eeb52e544f007f13626e8f1347f55dcf3cbbf437d68e292c910"
+    },
+    "ppg_sync/1097_FullHDwebcam_after.txt": {
+      "sha256": "8f4ef578ea2181541521d5f811e65dd985749c1c69334f57717ac04e56df05fe"
+    },
+    "meta/1097_FullHDwebcam_after.txt": {
+      "sha256": "0afdc5d8f16766a4daac5bf7ba4d9d3116412b5640130b1f7539a9b1a2bb7c14"
+    },
+    "video/1399_FullHDwebcam_before.avi": {
+      "sha256": "f63de2b2ba259e147dde6d3ccf3a4d8e84a65c917c88a06eb290d0bf2f2a84d4"
+    },
+    "ppg_sync/1399_FullHDwebcam_before.txt": {
+      "sha256": "6b4abdd0b51d04ba8762a3fa1e690cb467488a8488e577b7e86c774767676075"
+    },
+    "meta/1399_FullHDwebcam_before.txt": {
+      "sha256": "2da08fddca713a48939a4d474dd26fda6ab5872e96b8bf888bc11a6920e05d03"
+    },
+    "video/1399_FullHDwebcam_after.avi": {
+      "sha256": "6dd950a39c15457e0628a6380ce4b888f5f1ab7e66bd6062a434d6639bc154da"
+    },
+    "ppg_sync/1399_FullHDwebcam_after.txt": {
+      "sha256": "ad8303ca69decb03ed81a5ab57a42a372da196d30bd827de9bb514c7a541b876"
+    },
+    "meta/1399_FullHDwebcam_after.txt": {
+      "sha256": "8966ded419c27bdff48de454c79b0575ff098acae228f5275fe7bd614e841752"
+    },
+    "video/1541_FullHDwebcam_before.avi": {
+      "sha256": "1754c2a8e92d1b1294bbd19ec1479b49354023b4dc681bcdca8b14b9c15ecb89"
+    },
+    "ppg_sync/1541_FullHDwebcam_before.txt": {
+      "sha256": "58da692afd2c3bb2a3b503eacc5490c5ccd9447735abb7b9519b5a4f6eb2052d"
+    },
+    "meta/1541_FullHDwebcam_before.txt": {
+      "sha256": "2b2b469819596dd176693f77efd0b43765a9fca055def62c120079854f358bee"
+    },
+    "video/1541_FullHDwebcam_after.avi": {
+      "sha256": "3341661a103311c909d9beed6cc3074d18ba6c707043acaa96367c31284c4b37"
+    },
+    "ppg_sync/1541_FullHDwebcam_after.txt": {
+      "sha256": "ec7de8a4da9f7fab49d3b6e0b05f459bacd9c835c9f4368a71b7d3700c286178"
+    },
+    "meta/1541_FullHDwebcam_after.txt": {
+      "sha256": "0fc7209efcb7438a4ddc86770dce06aed6098e19763084e82e7fa3877727b52b"
+    },
+    "video/1932_FullHDwebcam_before.avi": {
+      "sha256": "5ee52cb09517d0ce49337e4cd5b6c13191fc576217f7c3d08de79e913d0053b8"
+    },
+    "ppg_sync/1932_FullHDwebcam_before.txt": {
+      "sha256": "761d4214df5a62c1fdf55fbf999510b1d8f2ef733a7638cc304149e102c416ff"
+    },
+    "meta/1932_FullHDwebcam_before.txt": {
+      "sha256": "fac6e7f357f9f5fbbec441fb9754847be95d2ae5b8e5f1bd9de902106452f49d"
+    },
+    "video/1932_FullHDwebcam_after.avi": {
+      "sha256": "4ece630d99f55b0b0e9abcdc8dfeb2a940021c310d5ac94cece222053011525b"
+    },
+    "ppg_sync/1932_FullHDwebcam_after.txt": {
+      "sha256": "bca9bb4e587e64299d73cb129ffad3a15aa3271d1fd4640f86fd56804801f172"
+    },
+    "meta/1932_FullHDwebcam_after.txt": {
+      "sha256": "0a0382ab16076570fa0c1c81063cb55586f0da63fc97febc59c44f22c96ca2ea"
+    },
+    "video/1981_FullHDwebcam_before.avi": {
+      "sha256": "c32ef0b488697f1ca52666ae40faa1fabf6f00359042bf3e388b89cfb26d24c6"
+    },
+    "ppg_sync/1981_FullHDwebcam_before.txt": {
+      "sha256": "df848ae398e2c4df2afed8dc7a42382f30f4deabdde27edd12ddb7c3688310f2"
+    },
+    "meta/1981_FullHDwebcam_before.txt": {
+      "sha256": "c553ebc3be65a3abb8003266b847ac48fa13c255682f38cd5a8de0298d5d5095"
+    },
+    "video/1981_FullHDwebcam_after.avi": {
+      "sha256": "a01bdcbb02cabf44cc71a43edca184c72b54b97837b53e33a52877b224ce9351"
+    },
+    "ppg_sync/1981_FullHDwebcam_after.txt": {
+      "sha256": "90b7c8305d5f928786930a4e59af90d4282f67eaa04c49532dc6e6baaf4a77c9"
+    },
+    "meta/1981_FullHDwebcam_after.txt": {
+      "sha256": "c045c6729b7b63dbf510ad9a2d7f2fd65d0a80ed46d99a3ecd2796bcc71102bd"
+    },
+    "video/2022_FullHDwebcam_before.avi": {
+      "sha256": "03f88f30c221ebcf4db7317ef31cf2e37ab84b3b9388fe4266c03634e15414ee"
+    },
+    "ppg_sync/2022_FullHDwebcam_before.txt": {
+      "sha256": "11bc7021c679b3580b4589fd58de5bd7c9758fa20ddf1892e4b922bf839f5551"
+    },
+    "meta/2022_FullHDwebcam_before.txt": {
+      "sha256": "9bfce6cddac33bb480e725fee37faf2408eab6c0303b2ce7515be4e627fe928c"
+    },
+    "video/2022_FullHDwebcam_after.avi": {
+      "sha256": "5fa07dd6ee3436b5f8a6eb75c90b79037dd3d74a366d1eb845f873c1c0134545"
+    },
+    "ppg_sync/2022_FullHDwebcam_after.txt": {
+      "sha256": "ef0f579524065af03c31a7154b42766433ec0a730a241763ac75d26c48966eeb"
+    },
+    "meta/2022_FullHDwebcam_after.txt": {
+      "sha256": "818c1dd2299df2d963c71e2b717852a58e48c92755489a8a74c1010a7f300e49"
+    },
+    "video/2110_FullHDwebcam_before.avi": {
+      "sha256": "ed4d0f41a467853c181eef0fa695457272e7b202210db6c5980356b2c2997142"
+    },
+    "ppg_sync/2110_FullHDwebcam_before.txt": {
+      "sha256": "5dc0b79b8438196e7f19593a2c7f0cd35e4c7e5dc818ec12c9c9e086cfa94005"
+    },
+    "meta/2110_FullHDwebcam_before.txt": {
+      "sha256": "7afa6bea86d84e710a8864322550ecc21ec09ba7583622b531ccd29c4a159ebc"
+    },
+    "video/2110_FullHDwebcam_after.avi": {
+      "sha256": "627f1936048938cdf0fbf76396b6f18f38e5f9fd2f51c31a4a7cf298cf86d178"
+    },
+    "ppg_sync/2110_FullHDwebcam_after.txt": {
+      "sha256": "fc2bb004495b8a76cab60b98fa82dcbed9543b2a6abf824e4fc9926c3ae2836a"
+    },
+    "meta/2110_FullHDwebcam_after.txt": {
+      "sha256": "dec98a0b7b2e8d1acf3053fa04ee477d3b4cba86d20d61301ec6e4c2f721168e"
+    },
+    "video/2527_FullHDwebcam_before.avi": {
+      "sha256": "01dfae9dc64e3d80a0aa111ee00fa8f5356072e36447c26c108b4d9ba1e6bee8"
+    },
+    "ppg_sync/2527_FullHDwebcam_before.txt": {
+      "sha256": "fb4c0ab0765b6ae911f498f4da23a90e095691bdd22006bb3f5aa177d2c20c51"
+    },
+    "meta/2527_FullHDwebcam_before.txt": {
+      "sha256": "c9aea8a0958b3cb9f036e7232752720bf53063e0f8a01394580243b5fca23e02"
+    },
+    "video/2527_FullHDwebcam_after.avi": {
+      "sha256": "ce10e769a597831801b46009c63b6aaf577bfc78edb4608351df270c965945b3"
+    },
+    "ppg_sync/2527_FullHDwebcam_after.txt": {
+      "sha256": "629f4f4a1b173679141ae7713ff5127e062bef4c8bc74391b7e1eb35de47ce18"
+    },
+    "meta/2527_FullHDwebcam_after.txt": {
+      "sha256": "6dd3b902df1b4fe8a2cd6bbbbb04696d93f7cd5a8201f5984decdd6efb53cede"
+    },
+    "video/2751_FullHDwebcam_before.avi": {
+      "sha256": "322f46b7062fd12df9cb3cd364704e9a761ea93044bef9556d14d4a772105a6f"
+    },
+    "ppg_sync/2751_FullHDwebcam_before.txt": {
+      "sha256": "5709d33bf757bc474396e730fbd01371acdd8cc499ef84e91594f343c0de69d5"
+    },
+    "meta/2751_FullHDwebcam_before.txt": {
+      "sha256": "76ec75f73ce736d41b6277f0175ae97d448f9dbd47daa6197781a709d73e1b37"
+    },
+    "video/2751_FullHDwebcam_after.avi": {
+      "sha256": "a1b3d3933dbaabbf23c53c24760315c2bb2373870fc36080d491574199b11cfe"
+    },
+    "ppg_sync/2751_FullHDwebcam_after.txt": {
+      "sha256": "671f525776a06ca61e3bb6391af6c7432f6d86d57775fec17811e6993ec32419"
+    },
+    "meta/2751_FullHDwebcam_after.txt": {
+      "sha256": "120109042252fef58191f9a2dbecb6a7ef0ec335d18874950a0ec150131a5d12"
+    },
+    "video/2895_FullHDwebcam_before.avi": {
+      "sha256": "3f73e90fe4898ce6f64175063e3050fea12885052414e7571e5a1ae2328191b0"
+    },
+    "ppg_sync/2895_FullHDwebcam_before.txt": {
+      "sha256": "97beaf837b40dc5c7877187cf655f404e7dc23cb3225a32f843dc050e255058e"
+    },
+    "meta/2895_FullHDwebcam_before.txt": {
+      "sha256": "8c6b7e27ce4d134409f9c9a14935a1530a79f60d709143898aaa81e0c9cc5c72"
+    },
+    "video/2895_FullHDwebcam_after.avi": {
+      "sha256": "d18a917385933a1b061866b7c99ee8c0f637c5dddb370c4f7275f05b65aed41d"
+    },
+    "ppg_sync/2895_FullHDwebcam_after.txt": {
+      "sha256": "16f1ff1ac9347902a3a901b9431e163d137b0b3ecae4c537e1f79003c247fcb3"
+    },
+    "meta/2895_FullHDwebcam_after.txt": {
+      "sha256": "7da97aefd25285d107b5653b9c62156cac4ce684925d5007f18111ec593060ed"
+    },
+    "video/2907_FullHDwebcam_before.avi": {
+      "sha256": "37d031898e52a4a8f4fc19c8a47c89680c61b05d6671bd370fe9f4a1076fc742"
+    },
+    "ppg_sync/2907_FullHDwebcam_before.txt": {
+      "sha256": "caaf628c55e6ef1d55c62a1df7443a87ae404dc7ed57ea1e3dddb1c149b9793a"
+    },
+    "meta/2907_FullHDwebcam_before.txt": {
+      "sha256": "893110e5d3672f97193ef332922f835112f354fa346771c94acfce7019ec6cce"
+    },
+    "video/2907_FullHDwebcam_after.avi": {
+      "sha256": "64b8b8ee6a6434e0051668f967d2700c4c86913f2b41be82185529c16e752e17"
+    },
+    "ppg_sync/2907_FullHDwebcam_after.txt": {
+      "sha256": "6d73fdba62a6b902ed37fb437cb85a8ea1435ab0b418b92f7af5922e07af03f1"
+    },
+    "meta/2907_FullHDwebcam_after.txt": {
+      "sha256": "8cda05f699d2d2a853bda8912cf516e9204478322fc4f31e0891a9004b157c1b"
+    },
+    "video/2948_FullHDwebcam_before.avi": {
+      "sha256": "4841150910880f264caf57c73b55f202afeb005104da21349f5f3c653a5f03e8"
+    },
+    "ppg_sync/2948_FullHDwebcam_before.txt": {
+      "sha256": "3c0d05d2d8f75463b27d500655c6cdc22ce2d5223f683a76d1a429385d5a286d"
+    },
+    "meta/2948_FullHDwebcam_before.txt": {
+      "sha256": "2cb8ed052726f3ff9ac2733e8cc60cf2140cd1c96edbd433792d9b446c204545"
+    },
+    "video/2948_FullHDwebcam_after.avi": {
+      "sha256": "1a77a86f3f0c0a9b6fbcf24b63e56f49d1ca1ce290682895139af1e18ae1e7f3"
+    },
+    "ppg_sync/2948_FullHDwebcam_after.txt": {
+      "sha256": "39035678b2095199b2332b0a1cc2cf5c9faed3ea275c3588c879bd66168c6955"
+    },
+    "meta/2948_FullHDwebcam_after.txt": {
+      "sha256": "a0d8d08e6f7978bc9a8c6bae28306425b8c1853d1afce986f26ed8b3c2d3d511"
+    },
+    "video/3077_FullHDwebcam_before.avi": {
+      "sha256": "112f4915553331af41e0d2d924f969440d2e075e2a22a920935103b4fc350feb"
+    },
+    "ppg_sync/3077_FullHDwebcam_before.txt": {
+      "sha256": "9fd3c2afacc195bb4ed6ac1f6c5181cc199be242e5c764bf645af8733022d345"
+    },
+    "meta/3077_FullHDwebcam_before.txt": {
+      "sha256": "1f1d8c52ccd23453bf85ebf59705f925237a7a9c3bfef7b7d85aa9c58a492730"
+    },
+    "video/3077_FullHDwebcam_after.avi": {
+      "sha256": "c82ac7fb846d55d1f4c753f9ce2071dfa7a49dd3e12320c9fc965c8ee91acbf7"
+    },
+    "ppg_sync/3077_FullHDwebcam_after.txt": {
+      "sha256": "6b6d80a982659642f7b4d09018f1176d3811853590af80ce84b784b9db1b6307"
+    },
+    "meta/3077_FullHDwebcam_after.txt": {
+      "sha256": "c3fe3c2fd1a8c34fbfb2618b81fc587116caaf1e20ae679a2f65d7d5892fc3df"
+    },
+    "video/3150_FullHDwebcam_before.avi": {
+      "sha256": "a7814b450e490f65566bc599fa022d43c291dfd33ee959e01543631cf86fc28e"
+    },
+    "ppg_sync/3150_FullHDwebcam_before.txt": {
+      "sha256": "16ee61b6323baf2df87e326cc19bf2bcde99bc57e747a2a79d2ec28d14b03737"
+    },
+    "meta/3150_FullHDwebcam_before.txt": {
+      "sha256": "6c097e0dfd184dbbb8728de2c96ded168c3d745d323e7e4317f92c865553a62e"
+    },
+    "video/3150_FullHDwebcam_after.avi": {
+      "sha256": "df308f6f1111985f7b8aa5a7a77e917c3509784d8292f5860a7bcd194b88c0d5"
+    },
+    "ppg_sync/3150_FullHDwebcam_after.txt": {
+      "sha256": "8d7ff1514a62a55f505fe8784314f1e91ea76e9482b0a6b62f419d29fbc4d53d"
+    },
+    "meta/3150_FullHDwebcam_after.txt": {
+      "sha256": "cc9a1c5cec1c79874fa1df2119b5e654f2f9e9b24efef6378d3162e71a1f74ce"
+    },
+    "video/3254_FullHDwebcam_before.avi": {
+      "sha256": "50c3e8dbea4fc3f5ba3aa948e4f19e2320b1b3b2cc09c5f217302b7bcca641de"
+    },
+    "ppg_sync/3254_FullHDwebcam_before.txt": {
+      "sha256": "15188debd03dec7ba94e6800e31edf60bdd8ae9fd50d07c1c2efdfb425486236"
+    },
+    "meta/3254_FullHDwebcam_before.txt": {
+      "sha256": "47315bce02f3d661df669574c2ead2cd06801406bdfce8ce56a8c0cfe12493e3"
+    },
+    "video/3254_FullHDwebcam_after.avi": {
+      "sha256": "d968c6c1fbb73df26daa155dfda4ab0c1552abec181c0cb35102c124e63bf6e0"
+    },
+    "ppg_sync/3254_FullHDwebcam_after.txt": {
+      "sha256": "3b520b0a9efd67b421f4543fe11ce30e517bd5a2558172074dcfa8254f6932bf"
+    },
+    "meta/3254_FullHDwebcam_after.txt": {
+      "sha256": "9eb5fd55038fec57137be556919db4c943855d389bbeb83bc3dcd6e0e805be04"
+    },
+    "video/3420_FullHDwebcam_before.avi": {
+      "sha256": "16db379b882efe309a2a8445ebeab623e3ddcee539813a17c0359dcfbbd7db55"
+    },
+    "ppg_sync/3420_FullHDwebcam_before.txt": {
+      "sha256": "23116779eb2a81f3b0bcc084dc8ad6ef08a176f427cc3dfc92c2e8c214ce1a7f"
+    },
+    "meta/3420_FullHDwebcam_before.txt": {
+      "sha256": "52611914a31ed16b519350cc956f41c2195cffac3a4c00a1fc2ba82f114cf991"
+    },
+    "video/3420_FullHDwebcam_after.avi": {
+      "sha256": "1df12bba1f5ed566e153382c792dd8d01d52e8fbac797c8acc27674a61b0d62c"
+    },
+    "ppg_sync/3420_FullHDwebcam_after.txt": {
+      "sha256": "8ff297a3275dd1b80fd1138d90b8d2dec64d4cc9c07b09a254052722bfb6d2ce"
+    },
+    "meta/3420_FullHDwebcam_after.txt": {
+      "sha256": "b4972636fbe914f153833cb955c559105a4a69884e03be6d26a4f25231fd97b1"
+    },
+    "video/3448_FullHDwebcam_before.avi": {
+      "sha256": "d96e2a5a2a0cb7fd8934a38649ef8c66467377710d549cadf0504649ba1f7d92"
+    },
+    "ppg_sync/3448_FullHDwebcam_before.txt": {
+      "sha256": "017d9b1a535112349c99d7bd758fec9d7a2a801e822366c0db7294e193d9abfd"
+    },
+    "meta/3448_FullHDwebcam_before.txt": {
+      "sha256": "99a9771c5ae86ab516fa46839a523666cf5f59931a445999cd8b09fe1d6e7dff"
+    },
+    "video/3448_FullHDwebcam_after.avi": {
+      "sha256": "469c30df7d174dc46f4067d7a521113dee42aeaec0cc0a94ffe598427c489802"
+    },
+    "ppg_sync/3448_FullHDwebcam_after.txt": {
+      "sha256": "e9efa4ee37508827d2aea3df747a20bcc9132c6e3b7f787653e4ec0550813798"
+    },
+    "meta/3448_FullHDwebcam_after.txt": {
+      "sha256": "c0f125b5e296efc64bc2149ce1c3a19e76e60204e2bd275f81f3803d584460c5"
+    },
+    "video/3529_FullHDwebcam_before.avi": {
+      "sha256": "aabbc7f53163d4293a32ba3d3d9df09143e477af3c76f4431536794b6596b3ae"
+    },
+    "ppg_sync/3529_FullHDwebcam_before.txt": {
+      "sha256": "395d992e2e5ba72c9684fcec058c22ef4368b573be768ada45a342e5fae49038"
+    },
+    "meta/3529_FullHDwebcam_before.txt": {
+      "sha256": "faa82ed8d65c8bc476c05d4391e38abb0ed8f06ee86197c04c20f55a10f313a2"
+    },
+    "video/3529_FullHDwebcam_after.avi": {
+      "sha256": "a3a8427ac78dde8d9578f4697e67b770871077bbf9b008af5c7050274816cf49"
+    },
+    "ppg_sync/3529_FullHDwebcam_after.txt": {
+      "sha256": "a9ebf815d74c10e34dc89e3ef3986b57e20a18bcac3ecf2a724e68c7fc2db64d"
+    },
+    "meta/3529_FullHDwebcam_after.txt": {
+      "sha256": "29749a238b0ebff0403ee8f975decee38a5d0efd55490650b4be64f34e05b1ba"
+    },
+    "video/3593_FullHDwebcam_before.avi": {
+      "sha256": "07791f3f6259cf7fb4d29314dca4bf3447e65024d4198a388cfe0eee81675a67"
+    },
+    "ppg_sync/3593_FullHDwebcam_before.txt": {
+      "sha256": "bf970f051110b320156a73d9cf9748bdd12508ece4c9a2ea53065445d46437fc"
+    },
+    "meta/3593_FullHDwebcam_before.txt": {
+      "sha256": "0d4bb82a541d640b35029dae590d7257e986e84cce2a0c4b0939dff9e1fab429"
+    },
+    "video/3593_FullHDwebcam_after.avi": {
+      "sha256": "9699d81dba0e1bfdb92ec0e3c79b689cba2e0ed63b8a86dcfde21615e85bb41a"
+    },
+    "ppg_sync/3593_FullHDwebcam_after.txt": {
+      "sha256": "a9e65b9d99b0a9304f0a57da085359c35a6d4fc302b04a38a968ae72de366d6d"
+    },
+    "meta/3593_FullHDwebcam_after.txt": {
+      "sha256": "2433ac23c53c80db5c69ade7954aa897ccc9d4c8e23f23f3a86c1f212ba1d7ac"
+    },
+    "video/3656_FullHDwebcam_before.avi": {
+      "sha256": "9341d96aeacb5c16b6aae822b7df037ab5846fe81a0520745de9096f4f2b7898"
+    },
+    "ppg_sync/3656_FullHDwebcam_before.txt": {
+      "sha256": "d8cea22157440c443f25ed3bb13ca94d80da72610a162f9270fdc88bbd66a3f4"
+    },
+    "meta/3656_FullHDwebcam_before.txt": {
+      "sha256": "76b03897bd02dc75f98c12c44c8aadae64f4b6b54c1e708b1233ccb9122d35fb"
+    },
+    "video/3656_FullHDwebcam_after.avi": {
+      "sha256": "0c2007b98c84b54787ec44b9011c714f6ceb466d9350ab5ad17440bb8448413f"
+    },
+    "ppg_sync/3656_FullHDwebcam_after.txt": {
+      "sha256": "8af26636c75e62698a45017949c8914421a4e00f2385d1367f0de366a5c21b73"
+    },
+    "meta/3656_FullHDwebcam_after.txt": {
+      "sha256": "bc9c131813be65074d5fcfdf5063abdb62f372d68abe3b2edfe5a3ddad5836f6"
+    },
+    "video/3700_FullHDwebcam_before.avi": {
+      "sha256": "a893a7e1f91b1589ab43d117f07ce663654cc770cd3b9bb6b819140745b67c1c"
+    },
+    "ppg_sync/3700_FullHDwebcam_before.txt": {
+      "sha256": "d7d3165a715b2053c8fcd0aba0ce384c867583987d2f20f68b4e33fea605ff6b"
+    },
+    "meta/3700_FullHDwebcam_before.txt": {
+      "sha256": "cd709f50840a8b1ef747cbda53ddf47476dc68987f61ea0cf883e51dbacfe1e2"
+    },
+    "video/3700_FullHDwebcam_after.avi": {
+      "sha256": "025569dcdf8193ba17a49911b2807fc1b15815b89e62a1dfc417cccb75cb998c"
+    },
+    "ppg_sync/3700_FullHDwebcam_after.txt": {
+      "sha256": "3db4c38722b548f114a6c8089568575a48d193852f5b97dce46055aab519c933"
+    },
+    "meta/3700_FullHDwebcam_after.txt": {
+      "sha256": "757bea2bb8e9f4d5c5c79b95f7bc20d1d95db1c96b440ba06d90dc6263448d59"
+    },
+    "video/4087_FullHDwebcam_before.avi": {
+      "sha256": "ccd57bd0b94d0551b93efd0ac597ebeaae36b03e206a3bfeedd57a51a838dbac"
+    },
+    "ppg_sync/4087_FullHDwebcam_before.txt": {
+      "sha256": "083e1c31434526ee488ccbb0b50ac6b510a4bdca65ece5edd4c8669e5803b59f"
+    },
+    "meta/4087_FullHDwebcam_before.txt": {
+      "sha256": "35ad239a7729fa9114f02f66be9111f2f6af5a133176a61aa50cb7b3b3d38de0"
+    },
+    "video/4087_FullHDwebcam_after.avi": {
+      "sha256": "406eb9be47b5991c89dc485d95ad48bc7fedb8ee0c511203bd13bb24fbb647aa"
+    },
+    "ppg_sync/4087_FullHDwebcam_after.txt": {
+      "sha256": "d47256af6c0e159fd450122236aa788635df088d0f6391e3101f63721398d835"
+    },
+    "meta/4087_FullHDwebcam_after.txt": {
+      "sha256": "0c04a9c7cd2e80fb588c21ed0f22c41c07bcb4b0e438d6231353ae66a037025d"
+    },
+    "video/4187_FullHDwebcam_before.avi": {
+      "sha256": "b6d399419208b336e5f42c4d8f72622bb00de18b61c2331e27ac55db542b63ea"
+    },
+    "ppg_sync/4187_FullHDwebcam_before.txt": {
+      "sha256": "8115ae86caf736d0f8209acd9cade73cd745bc94e07b99e4144e65dd443e2c8c"
+    },
+    "meta/4187_FullHDwebcam_before.txt": {
+      "sha256": "24efbc3ff1af48815d1c2baa8d870c93403811a3c635f65bb2f580717195dac7"
+    },
+    "video/4187_FullHDwebcam_after.avi": {
+      "sha256": "04f77f294ce957509f0c2a918b9153131b2ab41f9d3abadfa0fc0ea2ac147c94"
+    },
+    "ppg_sync/4187_FullHDwebcam_after.txt": {
+      "sha256": "962e757efba82c22522f63ededc008afa74cc36c517d8f93782dec2c7823eac5"
+    },
+    "meta/4187_FullHDwebcam_after.txt": {
+      "sha256": "af3f7ed8c288fcf919f7eebdf09f05497dac0b1258481dd2ac08042a261c1df5"
+    },
+    "video/4225_FullHDwebcam_before.avi": {
+      "sha256": "a9146835ddd635a2da94bec771fc5735b950e72759647f57f3b1c3dc06c333b2"
+    },
+    "ppg_sync/4225_FullHDwebcam_before.txt": {
+      "sha256": "571d91b13c8cf76b997222d5b4ed4d533224527c43171c46aaf080e50b02a5aa"
+    },
+    "meta/4225_FullHDwebcam_before.txt": {
+      "sha256": "95f2ef7fe0596b22928831c96b284d04d039196574b1db3ea397a7a906bc9ffc"
+    },
+    "video/4225_FullHDwebcam_after.avi": {
+      "sha256": "4d14a0a94e9d71db57fac91a2c3c7b70d0cd8354ae5ba1387a8a8b3bc0bf7030"
+    },
+    "ppg_sync/4225_FullHDwebcam_after.txt": {
+      "sha256": "ebeec14e8d96185963db00279e4fb20eabc760f9e0343e990f2c9d15dc8c17be"
+    },
+    "meta/4225_FullHDwebcam_after.txt": {
+      "sha256": "bdd59b8708542263d7dc883328faa04e4809b25fd1576e9ec5b8c368b582bcaf"
+    },
+    "video/4397_FullHDwebcam_before.avi": {
+      "sha256": "cf1377748a7ce170f3f80cfcc190ba6d335f3e3be7eb42858386aa3731059635"
+    },
+    "ppg_sync/4397_FullHDwebcam_before.txt": {
+      "sha256": "88c0cfed273e08eb0a078d56a5ae485485c255fde6701a838f54da007f150804"
+    },
+    "meta/4397_FullHDwebcam_before.txt": {
+      "sha256": "6cb1c9b5e9842f5155a2453423d07a69050b638c90418c30f2843533cea32bf9"
+    },
+    "video/4397_FullHDwebcam_after.avi": {
+      "sha256": "c41f19eb1301757512b5b73f7e3f06552109720f0af686a15784ccfeb32546bc"
+    },
+    "ppg_sync/4397_FullHDwebcam_after.txt": {
+      "sha256": "bd953ca65f0a86c01d5943307fb297ea30453fc49b90d00dc3a13999a1b46c8b"
+    },
+    "meta/4397_FullHDwebcam_after.txt": {
+      "sha256": "3cb16dbc3f3b9fc840ecc73c871a981ecc21927e2450cd5f5411e3434286f009"
+    },
+    "video/4430_FullHDwebcam_before.avi": {
+      "sha256": "286b1ea9350210f29870bb7a859a09e3c3933b6c0ef49acd7d0d699ae9accb5d"
+    },
+    "ppg_sync/4430_FullHDwebcam_before.txt": {
+      "sha256": "dbdc25cab6c6d59a30ad1aa426b055004ff0a8baadeae3d2d3191b47bd872ac7"
+    },
+    "meta/4430_FullHDwebcam_before.txt": {
+      "sha256": "42a129b833918ad6a6c8ef6c91e297f9b529133703d3532ffcff9c32a241ffac"
+    },
+    "video/4430_FullHDwebcam_after.avi": {
+      "sha256": "8a8d5094aafc6ca13759f6fb29e80f06fc6a7da2d364b8d8c8a1e897813ea5d1"
+    },
+    "ppg_sync/4430_FullHDwebcam_after.txt": {
+      "sha256": "a605e3b22e7c5eadd9201b9f601a008a84ec39f385f4e6b54ffa60438e6e3093"
+    },
+    "meta/4430_FullHDwebcam_after.txt": {
+      "sha256": "d2d78fed57724e83551c056d795d685df511e6830a72f2080e5926b94e046bdf"
+    },
+    "video/4488_FullHDwebcam_before.avi": {
+      "sha256": "320ded8397fe7cca1674105557891681bbeac33e94f76ea43aefa4d55dfe72a6"
+    },
+    "ppg_sync/4488_FullHDwebcam_before.txt": {
+      "sha256": "7d7d55fadd6f9d5f5d6da947ec2bc76fc8635b4c7d942e07cfed2cbea2f7c67c"
+    },
+    "meta/4488_FullHDwebcam_before.txt": {
+      "sha256": "ddcce90d9c54c679ce36b7c3ec261a1eaa94dc5dc5ee6f21f0e6ba8ca97be754"
+    },
+    "video/4488_FullHDwebcam_after.avi": {
+      "sha256": "c52261cef47d7d5dc5679a689cd0d604a3aad78fc61d806c83af8e89d33dec95"
+    },
+    "ppg_sync/4488_FullHDwebcam_after.txt": {
+      "sha256": "0f6134d95677d3cc2d9787bf01bd3599459a508d3447ecebce705fac17bf64c7"
+    },
+    "meta/4488_FullHDwebcam_after.txt": {
+      "sha256": "c6bea937b4ea8112a55e52d0e7a6cb5ae27f742303b2f846aea74481e45e7128"
+    },
+    "video/4532_FullHDwebcam_before.avi": {
+      "sha256": "d20d0a29a3cb66f36c0abfc0acbaaf8addcf068ae70624e1f476fb97984182f8"
+    },
+    "ppg_sync/4532_FullHDwebcam_before.txt": {
+      "sha256": "807b1e7d541d552f33d6c76d26b7a8c47547f8faea506afb4d99acafab17db68"
+    },
+    "meta/4532_FullHDwebcam_before.txt": {
+      "sha256": "47c0ff551c070f59818e8565b6aac8e676016a2461f78db78321064de59e408a"
+    },
+    "video/4532_FullHDwebcam_after.avi": {
+      "sha256": "9312c126cf36e7413ca06a470192cc06f94d4c77b451177c0dcf805a7a62f79a"
+    },
+    "ppg_sync/4532_FullHDwebcam_after.txt": {
+      "sha256": "fdbddd7793d7d8ad40e5949b5cb264879e86d4a67f07a6c58ab358d340b27169"
+    },
+    "meta/4532_FullHDwebcam_after.txt": {
+      "sha256": "379695b5fe3c5b1793963ac140b82f25378245a256137602540ed7df67d8676d"
+    },
+    "video/4571_FullHDwebcam_before.avi": {
+      "sha256": "e62c14271c03753bb42a40a720a40c04cfa3e16a9c3400c6f30adcd679732048"
+    },
+    "ppg_sync/4571_FullHDwebcam_before.txt": {
+      "sha256": "37f7afa2faec2f0f2c2da14fe5e702203a66001e90eebe92b56598dacdcef1d7"
+    },
+    "meta/4571_FullHDwebcam_before.txt": {
+      "sha256": "37bcb9d574b797c29c715f1f4da5d78bdd2124febae4fa74a8be82864d12a925"
+    },
+    "video/4571_FullHDwebcam_after.avi": {
+      "sha256": "3489d332ab30da92a2ba1cd09639d8ad56070dfedd86ce7a34aca29340f72edd"
+    },
+    "ppg_sync/4571_FullHDwebcam_after.txt": {
+      "sha256": "b794c611a910b1b3de2d16ea45dee4e055b2618ad6aa18cf4fe04bff48c1f61e"
+    },
+    "meta/4571_FullHDwebcam_after.txt": {
+      "sha256": "905ad22cbf31b7d66bce857257fb1baad4ce2a65e3a3c42074554f9d91328b1b"
+    },
+    "video/4937_FullHDwebcam_before.avi": {
+      "sha256": "3fce932d3010e009c27fa8c807ca7be2900e476a5830fc799618ca03af7d4251"
+    },
+    "ppg_sync/4937_FullHDwebcam_before.txt": {
+      "sha256": "9f2c8fc43fe008af61198a6c5a7cba685d8082e5a270be8e202aea148b888f57"
+    },
+    "meta/4937_FullHDwebcam_before.txt": {
+      "sha256": "0b3eb93fb6216043246cdc9d0dbd5f32c7331994410a2c603c7fe01b4a3037e2"
+    },
+    "video/4937_FullHDwebcam_after.avi": {
+      "sha256": "f246f6212d02f75ef927399258010f3eba957c6556e198096c4f7c1e06466512"
+    },
+    "ppg_sync/4937_FullHDwebcam_after.txt": {
+      "sha256": "a628d116ebdf11000fcff0942e7f9e8e08ac6ce4fbc67e71428cfc03fc4bb676"
+    },
+    "meta/4937_FullHDwebcam_after.txt": {
+      "sha256": "f80c4cbbd7d55db52cdb2c7f24cd3414edc3f282d401aa7073b06a5a99d640be"
+    },
+    "video/5031_FullHDwebcam_before.avi": {
+      "sha256": "27635f0ffa79cab94ad2198a517a53d2d98cf8d56f7dbc59d99e12bd9e482986"
+    },
+    "ppg_sync/5031_FullHDwebcam_before.txt": {
+      "sha256": "97b13af48324eb66e13e916e532057fae0d27376f42f9ce254ee65c7375919b1"
+    },
+    "meta/5031_FullHDwebcam_before.txt": {
+      "sha256": "f64dcea4289e4aa01d705ebc2a4b4d6ab6059be316a9a9d0e79730b1a711747b"
+    },
+    "video/5031_FullHDwebcam_after.avi": {
+      "sha256": "7e8dd8298eef840cdb30bfeaa0966cd476e2b8958cfd80d6d514223bff3c95ee"
+    },
+    "ppg_sync/5031_FullHDwebcam_after.txt": {
+      "sha256": "2da342ce5ce5e389267310ee6833899f3c67a31bb3c614596c223c1238f092de"
+    },
+    "meta/5031_FullHDwebcam_after.txt": {
+      "sha256": "5f70e2db578aa48daa34e6df04f4fc52ab417b56a855f3e6d321765c03851ad2"
+    },
+    "video/5156_FullHDwebcam_before.avi": {
+      "sha256": "63a563136cd2552406feb8985a6f3fe2da23f831af61b249aa54b8596f1b1974"
+    },
+    "ppg_sync/5156_FullHDwebcam_before.txt": {
+      "sha256": "9a091626f6a8cee4da96757e70bfb72a26b71ac30ca28f2dcdc3b3aff833e683"
+    },
+    "meta/5156_FullHDwebcam_before.txt": {
+      "sha256": "fd507eb02a0b313c6523115cfa604d034199de8af97f8a51683437e056312630"
+    },
+    "video/5156_FullHDwebcam_after.avi": {
+      "sha256": "fe18a7d8701fed352bb61a77b3fb799fb0bcc100b1616524e5e551de0f860ba5"
+    },
+    "ppg_sync/5156_FullHDwebcam_after.txt": {
+      "sha256": "642c9bfd162115696dff1dac798bf4b91406d895241ecf94714b7fafa557d559"
+    },
+    "meta/5156_FullHDwebcam_after.txt": {
+      "sha256": "beb6c1a9e68afa89f98076f407dd4bfce96c7ccf7f3a3543184c50a6e27e3a9e"
+    },
+    "video/5223_FullHDwebcam_before.avi": {
+      "sha256": "22b14d9bb035d910baf32e127672873f3722c7e5ff52362191a8227e0d45b83a"
+    },
+    "ppg_sync/5223_FullHDwebcam_before.txt": {
+      "sha256": "20570f8e035e1a08949a1dc9fb27bcb22a5258a7f90ba9c07e168a95357db049"
+    },
+    "meta/5223_FullHDwebcam_before.txt": {
+      "sha256": "018ffad1800816bd07f16cf4ad92fcf3411a83293e4c9e1458d29686ae73e9eb"
+    },
+    "video/5223_FullHDwebcam_after.avi": {
+      "sha256": "89b7debe3b101ef9a4a7323813e5ecbeb8f0d1ec091d05df44490f0228886654"
+    },
+    "ppg_sync/5223_FullHDwebcam_after.txt": {
+      "sha256": "ccb10a2313f212c2dce6d481f977f199bc890d23165325ad6cd387efd4fdcfea"
+    },
+    "meta/5223_FullHDwebcam_after.txt": {
+      "sha256": "92b6f4f78a75263158fdd85c50c8158cb1124fd84464c17aaaf4ed30fd631f89"
+    },
+    "video/5332_FullHDwebcam_before.avi": {
+      "sha256": "9109723413ee96ba41ebf6488b08ab2a30a3cf800cd5d3412e17f62494c61454"
+    },
+    "ppg_sync/5332_FullHDwebcam_before.txt": {
+      "sha256": "4307db8f5ef34ba94dffe564a7bdc5fef5881c0ed33e554299d119c903195b2d"
+    },
+    "meta/5332_FullHDwebcam_before.txt": {
+      "sha256": "ce2cdc92325b5eb8d62f1d39c9f16d88db67763a990863fc869870c34fff39cc"
+    },
+    "video/5332_FullHDwebcam_after.avi": {
+      "sha256": "567d240cf98ad35c16aab80467c10bb6a72d171500acdf9d5845e1bfb55de55c"
+    },
+    "ppg_sync/5332_FullHDwebcam_after.txt": {
+      "sha256": "10847be92fc679fa6d33b599b286a62acc7caf6b24cb234b105214f85e40c4d0"
+    },
+    "meta/5332_FullHDwebcam_after.txt": {
+      "sha256": "4738054148e64db70d12785070bba0f6dff6c11f084a25427503538c4160a22c"
+    },
+    "video/5644_FullHDwebcam_before.avi": {
+      "sha256": "3862929f35eaa0ae868032489483323363a9086752023e9262ac5de8b777a5c8"
+    },
+    "ppg_sync/5644_FullHDwebcam_before.txt": {
+      "sha256": "069dbd9be3f46756ac363d1e4f8b3dd178616ff9c8bf893be41f60b24232c63d"
+    },
+    "meta/5644_FullHDwebcam_before.txt": {
+      "sha256": "f92fc791e694c01ac6506dac6087b562ad083e884f593687237384cce558a05c"
+    },
+    "video/5644_FullHDwebcam_after.avi": {
+      "sha256": "26dc6dbb468c30190d8b208977faa9ad3c9ddbcd17b3095003e6f7b9a34d26e8"
+    },
+    "ppg_sync/5644_FullHDwebcam_after.txt": {
+      "sha256": "631fcae1f91449bbfe317fbb54d2585e79536a5369da59776ffb625f44be1469"
+    },
+    "meta/5644_FullHDwebcam_after.txt": {
+      "sha256": "e103e4cbcd5c3db69e40a0c761e84495f37fd69bcadb1d952d42a6477d9b5c0a"
+    },
+    "video/5734_FullHDwebcam_before.avi": {
+      "sha256": "0ebc5e65498415b67b549cc2b6373f8e874bbb3b4c5b6b04b2d37c7cd29210cf"
+    },
+    "ppg_sync/5734_FullHDwebcam_before.txt": {
+      "sha256": "76453bded0abe96e9ed07cb11095387b25819b27d16de4040dee75f362bf6942"
+    },
+    "meta/5734_FullHDwebcam_before.txt": {
+      "sha256": "c3f4456ee1d3e461419f8b21bb8803a3459b875bd2fdb62e3bd357773f39b5d0"
+    },
+    "video/5734_FullHDwebcam_after.avi": {
+      "sha256": "d8a6e1ecce6c7ebd60fa73893ea3b545b214740a57b6f58bcc517879b26f3beb"
+    },
+    "ppg_sync/5734_FullHDwebcam_after.txt": {
+      "sha256": "31b304f54469a4805034e2bbd5bfe381b0831637a4bf5d3975cceb8dbb444bd6"
+    },
+    "meta/5734_FullHDwebcam_after.txt": {
+      "sha256": "6cae5542c1b09e45c8466ba959df154cfba2d04685375910b9a35de72a036c31"
+    },
+    "video/6066_FullHDwebcam_before.avi": {
+      "sha256": "1685c3b7af5c141f36e8290c843b8448bb2253a72e4f99a4c681585296b712e9"
+    },
+    "ppg_sync/6066_FullHDwebcam_before.txt": {
+      "sha256": "1025530a83f4d5101d95c41626538083bf74f6659ed5984a9cbcd7d9f8a3d0c8"
+    },
+    "meta/6066_FullHDwebcam_before.txt": {
+      "sha256": "4560ddcb7966dfda41724638ba1009907c24abd28597e5f55580fa464499a5d6"
+    },
+    "video/6066_FullHDwebcam_after.avi": {
+      "sha256": "258630b91daed4ada96604b16d50c4ea751e636bfb3a83cf73939bc99452e58d"
+    },
+    "ppg_sync/6066_FullHDwebcam_after.txt": {
+      "sha256": "657f2b3c11c84fa521d74271d1cc91705e98b04b806ae3278d2a6cf32075854e"
+    },
+    "meta/6066_FullHDwebcam_after.txt": {
+      "sha256": "7baa30e369b2b7662fe58940e44930cc35928585799cf46518bd012aea52b131"
+    },
+    "video/6425_FullHDwebcam_before.avi": {
+      "sha256": "e818095f9b3389a792089f2a30e6f16817e8f00227b586d820bb5381cb94d879"
+    },
+    "ppg_sync/6425_FullHDwebcam_before.txt": {
+      "sha256": "fdb5253c24e77ce487b6b73f3525fb391da6b1678677b82c3c7384a65c85beeb"
+    },
+    "meta/6425_FullHDwebcam_before.txt": {
+      "sha256": "17357817c6dd73d09e9597b62c4f9f6fdc09a5fc2a73adf8e21a47188c1cef4c"
+    },
+    "video/6425_FullHDwebcam_after.avi": {
+      "sha256": "bfb47f337e3d46879e9b80d261869529b73e168d45df2d7738d7188ad43ba470"
+    },
+    "ppg_sync/6425_FullHDwebcam_after.txt": {
+      "sha256": "54dfab97d3b81d3647d4c3b3ee12fd8ce65e52b5baae78be9eda64ae652f06dc"
+    },
+    "meta/6425_FullHDwebcam_after.txt": {
+      "sha256": "d06665975743c41bf138d34738f97e6f9ed7bd1cb78a70ffd63c95d6b696d869"
+    },
+    "video/7231_FullHDwebcam_before.avi": {
+      "sha256": "c3c9c5dff01ce96d1651975a6a311e2c1a9336ef3d99cefbffe4105b7b4061c8"
+    },
+    "ppg_sync/7231_FullHDwebcam_before.txt": {
+      "sha256": "2e0eb34e6b5a7a8f14d5ce3f94bee4be020dbb13fcfdefcfab504abb050d09ba"
+    },
+    "meta/7231_FullHDwebcam_before.txt": {
+      "sha256": "cd810e68f8950a55a91b8365fd9144c84855074517877e10e6f310d253c2bb4a"
+    },
+    "video/7231_FullHDwebcam_after.avi": {
+      "sha256": "fca36b0ad6caf34e8505bf0647ec9ad84b94c1f56993ae75239b7a5b46d06128"
+    },
+    "ppg_sync/7231_FullHDwebcam_after.txt": {
+      "sha256": "2585aafd0e4d90fad55c79490f4564145acef135875087b287e30598ca6a2caf"
+    },
+    "meta/7231_FullHDwebcam_after.txt": {
+      "sha256": "1688e541a4240c6ec00960682e8b7625fd6a16adaf03c9cbdb2c3a9de049a46f"
+    },
+    "video/7520_FullHDwebcam_before.avi": {
+      "sha256": "ee1d84d07c55afbda77c6612f75987d7a041a2c427a303415aa785b0b9349287"
+    },
+    "ppg_sync/7520_FullHDwebcam_before.txt": {
+      "sha256": "bb38549baf6bf867bf5bfcb26ef3b8ed0d4b078997658b16bfdea8934298f13e"
+    },
+    "meta/7520_FullHDwebcam_before.txt": {
+      "sha256": "b51b60a3ea35af9adb8e78248cd2bcaaff0e075b26a35bf3e03d12298ab960ae"
+    },
+    "video/7520_FullHDwebcam_after.avi": {
+      "sha256": "62ddd3d2ba110b4a54b3e2adf770d0df84aa88027ffd405154bb8917bf22f108"
+    },
+    "ppg_sync/7520_FullHDwebcam_after.txt": {
+      "sha256": "19821d870b9dc2775213c402228292bad54d4664cb7a80f4db1a47be96fc6195"
+    },
+    "meta/7520_FullHDwebcam_after.txt": {
+      "sha256": "5bd09ed93002577ec7072bbb597aa85ffa0a509aa177b6c7a6a69d827eb8fc76"
+    },
+    "video/7539_FullHDwebcam_before.avi": {
+      "sha256": "8fb941eec42a0c2d19ce1946494c72aa988c968699613feee95848daa1a8940e"
+    },
+    "ppg_sync/7539_FullHDwebcam_before.txt": {
+      "sha256": "63b6b240a7b47a714e6fa592b2b1d1a3b96572e75385c9d7cb6a3e6d9890daef"
+    },
+    "meta/7539_FullHDwebcam_before.txt": {
+      "sha256": "bd90c40b3d860a76e81bb538163440b3cd15a949e5fd3bfa672e377ac2120cab"
+    },
+    "video/7539_FullHDwebcam_after.avi": {
+      "sha256": "cc8d68ed621c6cc806aa7fbafbb15cc6e40cd0df4e2b8cc964aca6af47fec98a"
+    },
+    "ppg_sync/7539_FullHDwebcam_after.txt": {
+      "sha256": "90481746c3a2eb5bceaaa8d1046437ded3f7cb028ff8b26d86267a7995dd6b01"
+    },
+    "meta/7539_FullHDwebcam_after.txt": {
+      "sha256": "8d433ae29def1eeb1d2e4824b1e510b42239590bb1146767798fc90a93b4d836"
+    },
+    "video/7568_FullHDwebcam_before.avi": {
+      "sha256": "86bb51ec520084066f44ba7fc0013cf6193b06cbabfa13284f61ce7eb5173c5f"
+    },
+    "ppg_sync/7568_FullHDwebcam_before.txt": {
+      "sha256": "a3b8b92fdcc048dfe8a398d7fa9a63909b76d2aba02bbba980e5e719839c9c26"
+    },
+    "meta/7568_FullHDwebcam_before.txt": {
+      "sha256": "c42cedbb8a316f813036e54b11f679d8b281d6aa3dad5fc168c3bedfb60f26f4"
+    },
+    "video/7568_FullHDwebcam_after.avi": {
+      "sha256": "7f88ff7884526c4a6c4e8ebef6680033a2c5e32cf674dc7e375a523b0e617244"
+    },
+    "ppg_sync/7568_FullHDwebcam_after.txt": {
+      "sha256": "012b6aef3508a3e013e7d8ab2d018890920331846351ddc6ca9b865ee60250d2"
+    },
+    "meta/7568_FullHDwebcam_after.txt": {
+      "sha256": "422b6c08ab4dcc527afc9c1a191a4befd0de12d8b4e3b78490a419babb7df88c"
+    },
+    "video/7576_FullHDwebcam_before.avi": {
+      "sha256": "d780c842dff66f6f3093ba2889eb6761f2dc4fa08eb6a1afe5d9c3ac1c092d4e"
+    },
+    "ppg_sync/7576_FullHDwebcam_before.txt": {
+      "sha256": "93efa5e2b9b2a401e295ba17282abcd14e9e3fc8149f4e212f624900dbe8491a"
+    },
+    "meta/7576_FullHDwebcam_before.txt": {
+      "sha256": "b7efe58a5722d33e633217492de47a8a140f9625fb270ff316f6b43ead23e9b6"
+    },
+    "video/7576_FullHDwebcam_after.avi": {
+      "sha256": "4c033f14ca342745e429ff0843e9a5e71ac45d9822075520cacdec71bf6e8bcb"
+    },
+    "ppg_sync/7576_FullHDwebcam_after.txt": {
+      "sha256": "185e473e62b80879af156e7f88db2e59aa8b0ad4cb779d06ac17f8f270f6f8e9"
+    },
+    "meta/7576_FullHDwebcam_after.txt": {
+      "sha256": "216a30f878be1b2dee07e04dc8e4a5dfe67b695aaeea165d1c612733d2c7a642"
+    },
+    "video/7637_FullHDwebcam_before.avi": {
+      "sha256": "604e9919e4be16deb6fe1233dbd296acac71945c952780619b664703b673a9ba"
+    },
+    "ppg_sync/7637_FullHDwebcam_before.txt": {
+      "sha256": "89d59b6e6701bdc3eca2fbf46bfef6f0f4154851348e8ad596efeeed3117ff72"
+    },
+    "meta/7637_FullHDwebcam_before.txt": {
+      "sha256": "3a278be5cd114db5518ef2676ba5a4567b78eadca28a360f365635a72ddfbdea"
+    },
+    "video/7637_FullHDwebcam_after.avi": {
+      "sha256": "1ba4286e22ba8ff9cbeb2008c0c4452703253a13a30d66f99318c66393bca6d8"
+    },
+    "ppg_sync/7637_FullHDwebcam_after.txt": {
+      "sha256": "7fd88ea2f47685408a9dbdd4fc60d255261630874ecb5ed13ad33ec4b3036296"
+    },
+    "meta/7637_FullHDwebcam_after.txt": {
+      "sha256": "6aafba4d57bb817e4b41ed69bbb2f58b1eac572a2036e1f81af154e8d887d979"
+    },
+    "video/7748_FullHDwebcam_before.avi": {
+      "sha256": "6c90061d4d202f4b197a9029d940d0d7265621496084f0b98b48a9766707d53c"
+    },
+    "ppg_sync/7748_FullHDwebcam_before.txt": {
+      "sha256": "849899e1864c961eb5cda2c0197763d2eee1744ba90f1f821b0e2b0d11ab5de5"
+    },
+    "meta/7748_FullHDwebcam_before.txt": {
+      "sha256": "4d06d9c0428146d8fb36e7c63d5372c4abe3f0bfbbb98991bd46dfab6ad02335"
+    },
+    "video/7748_FullHDwebcam_after.avi": {
+      "sha256": "d469011ad43469968aca0a8412bc84fd6a7091885243f25b52b1dda3c8f8b8f5"
+    },
+    "ppg_sync/7748_FullHDwebcam_after.txt": {
+      "sha256": "b14f69e2e91e22ba385694d331182e91f38c057dc8360f7950d229d465e96d0e"
+    },
+    "meta/7748_FullHDwebcam_after.txt": {
+      "sha256": "091e87b9465c13f0ba296970a105f584dd404822c1b9aee85b070ae19952dca0"
+    },
+    "video/7769_FullHDwebcam_before.avi": {
+      "sha256": "7a491c6a5c0b96cc346d143a6adff7a744dddd052cee776be036d282bd9eea52"
+    },
+    "ppg_sync/7769_FullHDwebcam_before.txt": {
+      "sha256": "ae920f0e5820ce2abd636d1bc587eae01070a47a840f503e41286c76e76c07c4"
+    },
+    "meta/7769_FullHDwebcam_before.txt": {
+      "sha256": "6157316f04c92586c5f56b4dd516c71f930a7ad561258533b072cd5075240399"
+    },
+    "video/7769_FullHDwebcam_after.avi": {
+      "sha256": "3d24e27298a826e9639e3a6b6783f3b948cd798601ac8bcaa73c7ebc7f0703d3"
+    },
+    "ppg_sync/7769_FullHDwebcam_after.txt": {
+      "sha256": "8c308d8d7337d10e14d32830b0858f6e3d0d0f1d388223fddce055c221ed0c18"
+    },
+    "meta/7769_FullHDwebcam_after.txt": {
+      "sha256": "f68f6b6da936a23b123a68910963a9ae3ba000c4d35da00e0482932c23aa1408"
+    },
+    "video/7927_FullHDwebcam_before.avi": {
+      "sha256": "a98cc8256f2f675578dc92b6300731a67969ad1b63a05797f05cf4b47859b9f1"
+    },
+    "ppg_sync/7927_FullHDwebcam_before.txt": {
+      "sha256": "0e074ce7f845e4cd3fbc002748f4ed1edc7454adfc01756b27f050d9eebfde22"
+    },
+    "meta/7927_FullHDwebcam_before.txt": {
+      "sha256": "8023e4782d6dadeab19749c83457d045bcbb9a1809c685af149772dfe7640221"
+    },
+    "video/7927_FullHDwebcam_after.avi": {
+      "sha256": "35982d9926aa757ebc367385baca03130a73ea49b781621c657dd7498841e2fe"
+    },
+    "ppg_sync/7927_FullHDwebcam_after.txt": {
+      "sha256": "d129a10d6a41414cc069fd63fa9032d6d057f5fd25d3037fc556ebcc57626468"
+    },
+    "meta/7927_FullHDwebcam_after.txt": {
+      "sha256": "b7d9bf401b5c773a98cabbce454d60d1fc0bfc849775c195353ad9c045ce3724"
+    },
+    "video/8370_FullHDwebcam_before.avi": {
+      "sha256": "96fb6b047df291fa763909e7eddbd4a18be1162a90fe499be3cb076dd21511c4"
+    },
+    "ppg_sync/8370_FullHDwebcam_before.txt": {
+      "sha256": "c2d4f5804be51d4d5e33b430d61e18ddfec9c782c00eaaa93f0233129cb62b3b"
+    },
+    "meta/8370_FullHDwebcam_before.txt": {
+      "sha256": "541d874aea59ff6ba870bd01056a497f902230a89c3f2576cf316f10866f25ca"
+    },
+    "video/8370_FullHDwebcam_after.avi": {
+      "sha256": "c46cdd7adfa15fb2c14fa9d2029d9d03d1510621cb30cbeed601d1fb2263fa5e"
+    },
+    "ppg_sync/8370_FullHDwebcam_after.txt": {
+      "sha256": "5c0cfbe654522ae309fcc5d47c0efd365ddea2e2d449cea47484c8c3c051a4a3"
+    },
+    "meta/8370_FullHDwebcam_after.txt": {
+      "sha256": "b3450ab9ba3118bf64a1a5f11705bbac77813699c1f6cefb633d45b982dde8d0"
+    },
+    "video/8384_FullHDwebcam_before.avi": {
+      "sha256": "29eee9591f884d2fa967cc44693fa2d4c158a30ebff07998d6d51f3c71075c8c"
+    },
+    "ppg_sync/8384_FullHDwebcam_before.txt": {
+      "sha256": "c3ed98f068faacbbd9ab6309cd71c5b98bdfa09b2a6a6ed43b6ad27451643619"
+    },
+    "meta/8384_FullHDwebcam_before.txt": {
+      "sha256": "da5fd22add5251361e35c93db2c2be97b9b4221fba442b21ef8d5dfed5d57af1"
+    },
+    "video/8384_FullHDwebcam_after.avi": {
+      "sha256": "5f3d204daaba4ded0235105f5186dcd52941496824227816e87927244fefc9bc"
+    },
+    "ppg_sync/8384_FullHDwebcam_after.txt": {
+      "sha256": "4588fe5daa7535bf6dc2d3f46972cc93dc4583ff7dc5d6db737dfd3dd652b3dd"
+    },
+    "meta/8384_FullHDwebcam_after.txt": {
+      "sha256": "edbe96a337cf1f12038ad820a6cac77310e50996ac3432f855682af25be9d7a0"
+    },
+    "video/8412_FullHDwebcam_before.avi": {
+      "sha256": "2c9814ac8843ac78aaa8e4b745f9b467989dfcdb0ba75b56d529741d080e25da"
+    },
+    "ppg_sync/8412_FullHDwebcam_before.txt": {
+      "sha256": "3c40ebf48d4e00f9bc7888f69c8dfb9d6fa894f97cfd34b0a245926c4098a789"
+    },
+    "meta/8412_FullHDwebcam_before.txt": {
+      "sha256": "9503fd2eac4c10d51a4ba5592a0ec06f8dd970f33150f0b38e893f3bdc72e629"
+    },
+    "video/8412_FullHDwebcam_after.avi": {
+      "sha256": "3c4000615b99b42c0dcdbc89bcf600c13a402df031f0fbc25336cebba806d734"
+    },
+    "ppg_sync/8412_FullHDwebcam_after.txt": {
+      "sha256": "0525cc2eb9c8c0f5c621e94473de8dcbcd47279e0ef483c96accb4fba8b93b1b"
+    },
+    "meta/8412_FullHDwebcam_after.txt": {
+      "sha256": "a53a49301de6d8197b66072553e853dafe626b9bac337da8574202d67a0fdffa"
+    },
+    "video/8563_FullHDwebcam_before.avi": {
+      "sha256": "a752795149230c482c4b2dd35170083ffef9797d9f005f72db522267c989474a"
+    },
+    "ppg_sync/8563_FullHDwebcam_before.txt": {
+      "sha256": "3f585d1aa2cd1b451977f56c586c027d3ed02f210d973cd4ef0004a2f598de73"
+    },
+    "meta/8563_FullHDwebcam_before.txt": {
+      "sha256": "b66f2f037e3c14fce0a85127c1c4e382f221fa8dfbdf5c6d9f201306e52a89e7"
+    },
+    "video/8563_FullHDwebcam_after.avi": {
+      "sha256": "4b8983b31f5c903460a21fd6e8c85ab215be975cfda5869a29a9036a7f66fc84"
+    },
+    "ppg_sync/8563_FullHDwebcam_after.txt": {
+      "sha256": "2009b3695dde7a2f00a143c67b82b2706fa44d81d3b98f0a60ea0707caf0753c"
+    },
+    "meta/8563_FullHDwebcam_after.txt": {
+      "sha256": "f2202201c1352132765e9534c03e18c3f85b32ce9443b7a46ac95ab9352dc45d"
+    },
+    "video/8772_FullHDwebcam_before.avi": {
+      "sha256": "a413f4c31ffb1996edc2633b25b3a3d9cc8750a907b18006330772599a8a8133"
+    },
+    "ppg_sync/8772_FullHDwebcam_before.txt": {
+      "sha256": "dc5eb515e93b79bec6063b8b0bb1522db2b9600137d2097fcc046e0cd13cb20c"
+    },
+    "meta/8772_FullHDwebcam_before.txt": {
+      "sha256": "9bcb7b901d54c0005907c6c122e23be3aec222625a5cbad72afd4bfd67fa77b3"
+    },
+    "video/8772_FullHDwebcam_after.avi": {
+      "sha256": "95bbb967af6bfb39c0a8564269307a801d8eddb6c18165bf9bed351952d86dbc"
+    },
+    "ppg_sync/8772_FullHDwebcam_after.txt": {
+      "sha256": "48ebdaa591a730c38ae829396308bef0ffa21faa02d79371afb33829ee8770ba"
+    },
+    "meta/8772_FullHDwebcam_after.txt": {
+      "sha256": "17165e2c2343667d76260bcc14c47a032ecdb4967209fcd941068384601b45e4"
+    },
+    "video/8834_FullHDwebcam_before.avi": {
+      "sha256": "95802263334f7ea22e70bf45d16a8b4baae437b58010691814b4f26278e38645"
+    },
+    "ppg_sync/8834_FullHDwebcam_before.txt": {
+      "sha256": "dab738217dd391be6d01a78dd4d3d65dae6b08a074f25278fffc63caa999ae04"
+    },
+    "meta/8834_FullHDwebcam_before.txt": {
+      "sha256": "b351d7af0da41783db97a708608131607934a54add4003a6c58baf1ba747cd9a"
+    },
+    "video/8834_FullHDwebcam_after.avi": {
+      "sha256": "61aac7302585528834cf6aa9bdca08d380b1e894bcc53a726f79b4569df22654"
+    },
+    "ppg_sync/8834_FullHDwebcam_after.txt": {
+      "sha256": "77bc4362723d29aa5ce1cc0dd057fb76d9e68d126683e6a7da79810bda9a7d66"
+    },
+    "meta/8834_FullHDwebcam_after.txt": {
+      "sha256": "8b59cc33a427d67b0b6682544e6bfd410527c61f072209a6fb8c4985efcbd67e"
+    },
+    "video/8874_FullHDwebcam_before.avi": {
+      "sha256": "359725255a83f0e836d7570991d5b49837e8c7bc78423c74d56bad9e5370c7bc"
+    },
+    "ppg_sync/8874_FullHDwebcam_before.txt": {
+      "sha256": "8dbef0071c142368f1c077ee7a51c29ff40e258a756d924f876b0ca3bc215062"
+    },
+    "meta/8874_FullHDwebcam_before.txt": {
+      "sha256": "7b02e9c70dab0543628f88ccaddb3cd43c9a5c11890b763558ec8cc9aedbbb70"
+    },
+    "video/8874_FullHDwebcam_after.avi": {
+      "sha256": "ce883d2d7973309ce805afacb62c3d89ab50f13e469df4fe80a22c7c1c2d4b30"
+    },
+    "ppg_sync/8874_FullHDwebcam_after.txt": {
+      "sha256": "e1d29d119bbb8cf10505e031f100cc17a6eefa6c6977d44c59fad4b1f180f1a7"
+    },
+    "meta/8874_FullHDwebcam_after.txt": {
+      "sha256": "9167569ff42afdbd66e1c94583625bd6aaa05ce530d4e98e6843bb4f0a78c00d"
+    },
+    "video/9115_FullHDwebcam_before.avi": {
+      "sha256": "80594bd77ba81aecc870c799aad682589141c6e13624ddc8deffcd64eb409252"
+    },
+    "ppg_sync/9115_FullHDwebcam_before.txt": {
+      "sha256": "a1099458053faf2d926daebc6ae0265d0eccae5bd50090be07d60b04e42e45f8"
+    },
+    "meta/9115_FullHDwebcam_before.txt": {
+      "sha256": "0f9dc54fa458d8af472e01f683200ced131d30a9f91bfe5b99115fbc2bf06da7"
+    },
+    "video/9115_FullHDwebcam_after.avi": {
+      "sha256": "5637b397b60f27a7d43e407b930d3b7526f9a4796ab40df4bf709a0edcb2fcd9"
+    },
+    "ppg_sync/9115_FullHDwebcam_after.txt": {
+      "sha256": "1cfee7c140bfc1cbb9db350fb43fbd296554667d05813047af7ce888d184c4b9"
+    },
+    "meta/9115_FullHDwebcam_after.txt": {
+      "sha256": "fadd604c393821d301741a98e4eeaa9301cb830f2402ef0473ae34a5f62db2e9"
+    },
+    "video/9146_FullHDwebcam_before.avi": {
+      "sha256": "29bdd0f25d1aaae24d4448ad90f51560cd5a920e46ee15e9f517c8e513f28a66"
+    },
+    "ppg_sync/9146_FullHDwebcam_before.txt": {
+      "sha256": "7246db6443188374893e9ea9f45c3558292209ab35687e9eaa27e5fc082a5839"
+    },
+    "meta/9146_FullHDwebcam_before.txt": {
+      "sha256": "669c3c96aa8872b7e29f6baf856c1d2648f2bbf972e9e231c0c34a4154e54e87"
+    },
+    "video/9146_FullHDwebcam_after.avi": {
+      "sha256": "23f52c271313bd498e1c9c61ab2031ba6cd76b5fda5fe2f35d928a6a63a37bd3"
+    },
+    "ppg_sync/9146_FullHDwebcam_after.txt": {
+      "sha256": "6be9eff2edddf637dc62aa923a94cd7a416977240bd104321ac9d984bf96444e"
+    },
+    "meta/9146_FullHDwebcam_after.txt": {
+      "sha256": "eb401c8260ef5b2911f3a7e8aa05927bb913e98dd056e377a92fd899ff8de751"
+    },
+    "video/9163_FullHDwebcam_before.avi": {
+      "sha256": "03e90f9109e287194e5236fa06f921f58fd6a25df0659c5a8d328aa6d4a621ff"
+    },
+    "ppg_sync/9163_FullHDwebcam_before.txt": {
+      "sha256": "1ee1a6f74d5155cf704df95200bd663c5021e93a72d041c67feb7d6c166010ce"
+    },
+    "meta/9163_FullHDwebcam_before.txt": {
+      "sha256": "a62b534645b7e617bffd34a5e5148e41e4ebc8ec65dc039bdee33df6aa8f3d59"
+    },
+    "video/9163_FullHDwebcam_after.avi": {
+      "sha256": "7429688ded6d5058f976db7ad25413fe29806c40d4c12bd4bbc2bde8132d7d34"
+    },
+    "ppg_sync/9163_FullHDwebcam_after.txt": {
+      "sha256": "035b4dc6c0f1f9779c6f0527baa29ddd7ae57bf793f8397b3de4903eedff0e09"
+    },
+    "meta/9163_FullHDwebcam_after.txt": {
+      "sha256": "b3074906d275f3974431ed98981b7d0b44948fca85aeff3832b6b4abc6160745"
+    },
+    "video/9282_FullHDwebcam_before.avi": {
+      "sha256": "73e8fa3805b98c0cde49fc074ab12c1caac9072687095ed01987a966fbf0f02c"
+    },
+    "ppg_sync/9282_FullHDwebcam_before.txt": {
+      "sha256": "791fef4d67ab39367c6fb20f13f7226d687ece1f247fbb52bb49da7fb7005b3b"
+    },
+    "meta/9282_FullHDwebcam_before.txt": {
+      "sha256": "935b04556e11e7812f82363949657a00990d52a3e485005822dbc795f077e386"
+    },
+    "video/9282_FullHDwebcam_after.avi": {
+      "sha256": "cbade9ef70069c6a515f31a0eb696826b2a10feb9cf9687ca86bf243499f2ead"
+    },
+    "ppg_sync/9282_FullHDwebcam_after.txt": {
+      "sha256": "55ac8881ec290ac05d690a12b26ff45c5a58be7f4d21995b0e575631144e3d60"
+    },
+    "meta/9282_FullHDwebcam_after.txt": {
+      "sha256": "cac488f7f0d51c664da25455271614eab5951ccc9ed2fc927a8db1ccbfa84e28"
+    },
+    "video/9286_FullHDwebcam_before.avi": {
+      "sha256": "458f97f7609954644fc78cf0b6127367b90ed652a74a251196dbb7cf00b66a68"
+    },
+    "ppg_sync/9286_FullHDwebcam_before.txt": {
+      "sha256": "b017dbac8fcb3372615d206c9fa07f168f4794166da28ee5356120d51d091a90"
+    },
+    "meta/9286_FullHDwebcam_before.txt": {
+      "sha256": "4fa713d1175365cf5c0645c52320b0be831065000c0069f6b7e15a276bfde4d7"
+    },
+    "video/9286_FullHDwebcam_after.avi": {
+      "sha256": "e0ca77de9477a16db0febbce204c32e48c05e4eec4dceac5da39132c4c380971"
+    },
+    "ppg_sync/9286_FullHDwebcam_after.txt": {
+      "sha256": "05515f14697173b9dc74aab757465ba91e22b9d7b044c969eeea6162973a296d"
+    },
+    "meta/9286_FullHDwebcam_after.txt": {
+      "sha256": "9d23e351e7703e474d107b4db0e70b8eaa72a6d831b5ec898df1ade588bd063f"
+    },
+    "video/9825_FullHDwebcam_before.avi": {
+      "sha256": "3c75104b2f10f628c367b88491fba778e4b387585382b206ec8c1dea8170935c"
+    },
+    "ppg_sync/9825_FullHDwebcam_before.txt": {
+      "sha256": "433948ae2e53b844947b3f73c31dbcec04aa7ac7be2e10a3ca810625dcc60041"
+    },
+    "meta/9825_FullHDwebcam_before.txt": {
+      "sha256": "2570a1d04e078ea7790267483111eed9374a7a8cc06041ac806e25d1e1a344bb"
+    },
+    "video/9825_FullHDwebcam_after.avi": {
+      "sha256": "f18c1646492f2896cf5b9284838e39345e2cc872bcea18244baab4580ad03af9"
+    },
+    "ppg_sync/9825_FullHDwebcam_after.txt": {
+      "sha256": "40c068f71eaa26df7467b5ee713fd4ac00883d6b26fec8dac864e86129e8a2a9"
+    },
+    "meta/9825_FullHDwebcam_after.txt": {
+      "sha256": "2fc708fe61808e42e1c5dde4ea8f9336413b98b5fee419a289d032bb413d4f43"
+    }
+  },
+  "created": "20261023-115655",
+  "subject_disjoint": true
+}

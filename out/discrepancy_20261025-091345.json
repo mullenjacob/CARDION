@@ -1,0 +1,372 @@
+{
+ "command": "python scripts/analyze_discrepancy.py",
+ "source_validation_file": "results_mcd-val_val_all_20261024-012815.json",
+ "rule": {
+  "min_peak_ratio": 8,
+  "agree_bpm": 8,
+  "min_agree": 2,
+  "voters": [
+   "rgb_green",
+   "rgb_pos",
+   "rgb_chrom"
+  ]
+ },
+ "n_windows": 1239,
+ "n_subjects": 12,
+ "ungated_individual": {
+  "rgb_green": {
+   "n_windows": 1239,
+   "n_shown": 1239,
+   "coverage": 1.0,
+   "mae_pooled": 14.830589184826472,
+   "mae_subject_mean": 15.210804556354917,
+   "within_5": 0.4915254237288136,
+   "within_3": 0.4745762711864407,
+   "within_1": 0.36561743341404357
+  },
+  "rgb_pos": {
+   "n_windows": 1239,
+   "n_shown": 1239,
+   "coverage": 1.0,
+   "mae_pooled": 6.553430185633576,
+   "mae_subject_mean": 6.455422062350119,
+   "within_5": 0.7473769168684423,
+   "within_3": 0.7263922518159807,
+   "within_1": 0.6343825665859564
+  },
+  "rgb_chrom": {
+   "n_windows": 1239,
+   "n_shown": 1239,
+   "coverage": 1.0,
+   "mae_pooled": 14.000242130750605,
+   "mae_subject_mean": 14.096744604316548,
+   "within_5": 0.4632768361581921,
+   "within_3": 0.4156577885391445,
+   "within_1": 0.30104923325262306
+  },
+  "event_green": {
+   "n_windows": 1239,
+   "n_shown": 1239,
+   "coverage": 1.0,
+   "mae_pooled": 23.69959644874899,
+   "mae_subject_mean": 23.954720023980816,
+   "within_5": 0.17836965294592413,
+   "within_3": 0.14850686037126715,
+   "within_1": 0.09281678773204197
+  },
+  "event_pos": {
+   "n_windows": 1239,
+   "n_shown": 1239,
+   "coverage": 1.0,
+   "mae_pooled": 18.68313155770783,
+   "mae_subject_mean": 18.810993405275777,
+   "within_5": 0.3309120258272801,
+   "within_3": 0.30347054075867635,
+   "within_1": 0.2033898305084746
+  },
+  "snn": {
+   "n_windows": 1239,
+   "n_shown": 1239,
+   "coverage": 1.0,
+   "mae_pooled": 12.922006994888351,
+   "mae_subject_mean": 13.084302557953635,
+   "within_5": 0.27602905569007263,
+   "within_3": 0.17110573042776434,
+   "within_1": 0.057304277643260695
+  },
+  "ann": {
+   "n_windows": 1239,
+   "n_shown": 1239,
+   "coverage": 1.0,
+   "mae_pooled": 10.160209846650524,
+   "mae_subject_mean": 10.414318345323741,
+   "within_5": 0.5730427764326069,
+   "within_3": 0.5189669087974172,
+   "within_1": 0.3954802259887006
+  }
+ },
+ "ungated_rgb_average_every_window": {
+  "n_windows": 1239,
+  "n_shown": 1239,
+  "coverage": 1.0,
+  "mae_pooled": 9.279607210115685,
+  "mae_subject_mean": 9.347685451638688,
+  "within_5": 0.43825665859564167,
+  "within_3": 0.35754640839386603,
+  "within_1": 0.24293785310734464
+ },
+ "app_gated": {
+  "n_windows": 1239,
+  "n_shown": 437,
+  "coverage": 0.3527037933817595,
+  "mae_pooled": 2.9752479023646075,
+  "mae_subject_mean": 5.62739717164322,
+  "within_5": 0.9016018306636155,
+  "within_3": 0.8832951945080092,
+  "within_1": 0.7185354691075515
+ },
+ "individual_methods_on_gate_passing_windows": {
+  "rgb_green": {
+   "mae_pooled": 11.141876430205949,
+   "within_5": 0.7185354691075515
+  },
+  "rgb_pos": {
+   "mae_pooled": 2.305263157894737,
+   "within_5": 0.9496567505720824
+  },
+  "rgb_chrom": {
+   "mae_pooled": 5.267276887871854,
+   "within_5": 0.7459954233409611
+  },
+  "event_green": {
+   "mae_pooled": 22.8141876430206,
+   "within_5": 0.30205949656750575
+  },
+  "event_pos": {
+   "mae_pooled": 11.472311212814647,
+   "within_5": 0.6109839816933639
+  },
+  "snn": {
+   "mae_pooled": 11.849733028222731,
+   "within_5": 0.23569794050343248
+  },
+  "ann": {
+   "mae_pooled": 6.042257818459192,
+   "within_5": 0.7437070938215103
+  },
+  "app_consensus": {
+   "mae_pooled": 2.9752479023646075,
+   "within_5": 0.9016018306636155
+  }
+ },
+ "by_reference_hr": {
+  "<76": {
+   "gated": {
+    "n_windows": 396,
+    "n_shown": 192,
+    "coverage": 0.48484848484848486,
+    "mae_pooled": 4.426909722222221,
+    "mae_subject_mean": 8.924116405270379,
+    "within_5": 0.90625,
+    "within_3": 0.8854166666666666,
+    "within_1": 0.6458333333333334
+   },
+   "rgb_pos_ungated": {
+    "n_windows": 396,
+    "n_shown": 396,
+    "coverage": 1.0,
+    "mae_pooled": 8.489646464646464,
+    "mae_subject_mean": 10.77747882731574,
+    "within_5": 0.7853535353535354,
+    "within_3": 0.7727272727272727,
+    "within_1": 0.6666666666666666
+   }
+  },
+  "76-90": {
+   "gated": {
+    "n_windows": 431,
+    "n_shown": 138,
+    "coverage": 0.32018561484918795,
+    "mae_pooled": 2.221739130434783,
+    "mae_subject_mean": 4.772336379208984,
+    "within_5": 0.855072463768116,
+    "within_3": 0.8333333333333334,
+    "within_1": 0.6594202898550725
+   },
+   "rgb_pos_ungated": {
+    "n_windows": 431,
+    "n_shown": 431,
+    "coverage": 1.0,
+    "mae_pooled": 5.907656612529002,
+    "mae_subject_mean": 5.815416019858668,
+    "within_5": 0.7354988399071926,
+    "within_3": 0.703016241299304,
+    "within_1": 0.605568445475638
+   }
+  },
+  ">=90": {
+   "gated": {
+    "n_windows": 412,
+    "n_shown": 107,
+    "coverage": 0.25970873786407767,
+    "mae_pooled": 1.3422118380062307,
+    "mae_subject_mean": 4.859517006802721,
+    "within_5": 0.9532710280373832,
+    "within_3": 0.9439252336448598,
+    "within_1": 0.9252336448598131
+   },
+   "rgb_pos_ungated": {
+    "n_windows": 412,
+    "n_shown": 412,
+    "coverage": 1.0,
+    "mae_pooled": 5.367961165048545,
+    "mae_subject_mean": 6.629657498057499,
+    "within_5": 0.7233009708737864,
+    "within_3": 0.7063106796116505,
+    "within_1": 0.633495145631068
+   }
+  }
+ },
+ "by_condition": {
+  "before": {
+   "gated": {
+    "n_windows": 639,
+    "n_shown": 200,
+    "coverage": 0.3129890453834116,
+    "mae_pooled": 4.227916666666666,
+    "mae_subject_mean": 7.168262883734244,
+    "within_5": 0.835,
+    "within_3": 0.8,
+    "within_1": 0.605
+   },
+   "rgb_pos_ungated": {
+    "n_windows": 639,
+    "n_shown": 639,
+    "coverage": 1.0,
+    "mae_pooled": 9.154929577464788,
+    "mae_subject_mean": 8.850662921348315,
+    "within_5": 0.651017214397496,
+    "within_3": 0.621283255086072,
+    "within_1": 0.5211267605633803
+   }
+  },
+  "after": {
+   "gated": {
+    "n_windows": 600,
+    "n_shown": 237,
+    "coverage": 0.395,
+    "mae_pooled": 1.918143459915612,
+    "mae_subject_mean": 1.6206580000004507,
+    "within_5": 0.9578059071729957,
+    "within_3": 0.9535864978902954,
+    "within_1": 0.8143459915611815
+   },
+   "rgb_pos_ungated": {
+    "n_windows": 600,
+    "n_shown": 600,
+    "coverage": 1.0,
+    "mae_pooled": 3.782833333333333,
+    "mae_subject_mean": 3.782833333333333,
+    "within_5": 0.85,
+    "within_3": 0.8383333333333334,
+    "within_1": 0.755
+   }
+  }
+ },
+ "per_subject_gated": {
+  "2110": {
+   "coverage": 0.53,
+   "mae_pooled": 9.924842767295598
+  },
+  "2527": {
+   "coverage": 0.27,
+   "mae_pooled": 0.5037037037037035
+  },
+  "3150": {
+   "coverage": 0.02,
+   "mae_pooled": 8.124999999999993
+  },
+  "3448": {
+   "coverage": 0.02,
+   "mae_pooled": 2.1499999999999986
+  },
+  "3656": {
+   "coverage": 0.07,
+   "mae_pooled": 37.34999999999999
+  },
+  "4225": {
+   "coverage": 0.67,
+   "mae_pooled": 2.591791044776119
+  },
+  "4937": {
+   "coverage": 0.94,
+   "mae_pooled": 0.422872340425531
+  },
+  "7231": {
+   "coverage": 0.05,
+   "mae_pooled": 0.33000000000000396
+  },
+  "7568": {
+   "coverage": 0.61,
+   "mae_pooled": 0.9655737704918029
+  },
+  "7637": {
+   "coverage": 0.4,
+   "mae_pooled": 1.9116666666666664
+  },
+  "8772": {
+   "coverage": 0.23741007194244604,
+   "mae_pooled": 1.6540404040404058
+  },
+  "9286": {
+   "coverage": 0.46,
+   "mae_pooled": 1.5992753623188407
+  }
+ },
+ "subjects_with_no_shown_window": [],
+ "top_quartile_signal_quality_windows": {
+  "rgb_pos_ungated": {
+   "n_windows": 312,
+   "n_shown": 312,
+   "coverage": 1.0,
+   "mae_pooled": 4.663461538461537,
+   "mae_subject_mean": 5.97072076505904,
+   "within_5": 0.8974358974358975,
+   "within_3": 0.8974358974358975,
+   "within_1": 0.8493589743589743
+  },
+  "app_gated": {
+   "n_windows": 312,
+   "n_shown": 266,
+   "coverage": 0.8525641025641025,
+   "mae_pooled": 3.6905388471177947,
+   "mae_subject_mean": 6.948708780017151,
+   "within_5": 0.924812030075188,
+   "within_3": 0.9060150375939849,
+   "within_1": 0.7293233082706767
+  },
+  "n_windows": 312
+ },
+ "quoted_frozen_test_numbers": {
+  "file": "results_mcd-test_final_20261024-014712.json",
+  "rows_mae_subject_mean": {
+   "ann_log_th0.02": 15.55,
+   "ann_th0.02": 15.61,
+   "ann_th0.05": 12.82,
+   "ann_th0.1": 14.62,
+   "event_green@0.02": 23.68,
+   "event_green@0.05": 25.36,
+   "event_green@0.1": 25.68,
+   "event_pos@0.02": 16.07,
+   "event_pos@0.05": 18.93,
+   "event_pos@0.1": 21.17,
+   "rgb_chrom": 9.33,
+   "rgb_green": 14.72,
+   "rgb_pos": 5.78,
+   "snn_log_th0.02": 19.85,
+   "snn_th0.02": 20.16,
+   "snn_th0.05": 22.71,
+   "snn_th0.1": 18.89
+  },
+  "quality_rule_test_file": "quality_rule_test_20261024-015143.json",
+  "app_gated_on_frozen_test": {
+   "coverage": 0.4056761268781302,
+   "mae": 2.372290809327847,
+   "within5": 0.8580246913580247,
+   "n_shown": 486,
+   "n": 1198
+  },
+  "ungated_voters_on_frozen_test": {
+   "rgb_green": 14.743071786310518,
+   "rgb_pos": 5.778797996661101,
+   "rgb_chrom": 9.33347245409015
+  }
+ },
+ "cannot_be_separated_with_these_data": [
+  "lighting and camera: every MCD clip is a Full-HD webcam recording in office/room light; the live tests used a different camera and room (no way to compare from these files)",
+  "recording compression: MCD videos are compressed files; the live path sees uncompressed webcam frames (the earlier compression study in out/ measures this effect separately)",
+  "reference synchronisation: MCD reference rates come from a pulse oximeter on the same recording clock; a hand-read watch value is delayed and averaged (this is what validation mode's pairing window and sensitivity table address)",
+  "consumer-watch reference error: not measurable here",
+  "the live estimates were informal and not blinded, and the sample was a few people at rest (no activity condition)"
+ ]
+}

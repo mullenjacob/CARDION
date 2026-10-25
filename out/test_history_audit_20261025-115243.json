@@ -1,0 +1,105 @@
+{
+ "command": "python scripts/test_history_audit.py",
+ "freeze_commit": "38ed504",
+ "later_commit": "c80aed3",
+ "freeze_commit_subject": "FREEZE before final test: SHS HR picking, reference validity, quality rule, app models selected on validation only",
+ "freeze_commit_time": "2026-10-24 00:46:22 -0400",
+ "frozen_files": {
+  "models/snn.pt": {
+   "identical_to_freeze": true,
+   "sha256": "2a88e9c1b10a8850cbefe74817742615c3fd4300fe446d431d5fd9ff376e5243"
+  },
+  "models/ann.pt": {
+   "identical_to_freeze": true,
+   "sha256": "c649feebd6a890ad0dadfd81610c6ec9dc638a49020b85b3c8d479e9e2c3e895"
+  },
+  "models/models.json": {
+   "identical_to_freeze": true,
+   "sha256": "b8c8004f613b5074da33a232688888701c38a04666a71a4ab891135e1086fdb5"
+  },
+  "configs/quality_calibrated.json": {
+   "identical_to_freeze": true,
+   "sha256": "0e0c9c04853112f45f8fbf637b2f4de270a544c066543658ce6d0cd1587b1b32"
+  }
+ },
+ "files_changed_between_freeze_and_final_test_commit": [
+  "configs/default.yaml",
+  "scripts/_an11.py",
+  "scripts/_an12.py",
+  "scripts/_an13.py",
+  "scripts/_an14.py",
+  "scripts/_patch30.py",
+  "scripts/_patch31.py",
+  "scripts/_patch32.py",
+  "scripts/_patch33.py",
+  "scripts/_patch34.py",
+  "scripts/_patch35.py",
+  "scripts/_patch36.py",
+  "scripts/_patch37.py",
+  "scripts/_patch38.py",
+  "scripts/_patch39.py",
+  "scripts/_patch40.py",
+  "scripts/_patch41.py",
+  "scripts/_tex_dbg.py",
+  "scripts/_tex_dbg2.py",
+  "scripts/app_real_video_check.py",
+  "scripts/build_paper.ps1",
+  "scripts/build_paper.py",
+  "scripts/real_video_diagnostics.py",
+  "scripts/summarize_budget.py",
+  "src/cardion_app/engine.py",
+  "src/cardion_app/pipeline.py",
+  "src/cardion_app/selftest.py",
+  "src/cardion_app/server.py",
+  "src/cardion_app/static/app.js",
+  "src/cardion_app/static/index.html",
+  "src/cardion_app/static/style.css",
+  "src/evaluate.py",
+  "src/report.py"
+ ],
+ "window_level_estimates_identical": true,
+ "n_method_clip_pairs_compared": 696,
+ "first_run_family_mae": {
+  "ann_log_th0.02": 15.571540721189637,
+  "ann_th0.02": 15.957672848110322,
+  "ann_th0.05": 13.677153733595182,
+  "ann_th0.1": 15.928803327611224,
+  "event_green@0.02": 23.674920904701867,
+  "event_green@0.05": 25.342991652844606,
+  "event_green@0.1": 25.66894746927127,
+  "event_pos@0.02": 16.055956132419798,
+  "event_pos@0.05": 18.91619527502635,
+  "event_pos@0.1": 21.13871722577978,
+  "rgb_chrom": 9.336229771194452,
+  "rgb_green": 14.74364740332704,
+  "rgb_pos": 5.778749848394156,
+  "snn_log_th0.02": 19.85179151364769,
+  "snn_th0.02": 16.501804274493608,
+  "snn_th0.05": 17.513735068434503,
+  "snn_th0.1": 18.390758106410022
+ },
+ "second_run_family_mae": {
+  "ann_log_th0.02": 15.547647415338025,
+  "ann_th0.02": 15.608307914171283,
+  "ann_th0.05": 12.817181542909692,
+  "ann_th0.1": 14.618063837555844,
+  "event_green@0.02": 23.681616843786657,
+  "event_green@0.05": 25.364749153303396,
+  "event_green@0.1": 25.683129766540347,
+  "event_pos@0.02": 16.07035224756353,
+  "event_pos@0.05": 18.93494891339412,
+  "event_pos@0.1": 21.167784429327487,
+  "rgb_chrom": 9.334168961221906,
+  "rgb_green": 14.719249150547666,
+  "rgb_pos": 5.777159563363186,
+  "snn_log_th0.02": 19.854082285347435,
+  "snn_th0.02": 20.15801980330235,
+  "snn_th0.05": 22.712798826228862,
+  "snn_th0.1": 18.89103781168607
+ },
+ "max_abs_family_mae_change": 5.1990637577943595,
+ "files": {
+  "first": "results_mcd-test_final_20261024-010603.json",
+  "second": "results_mcd-test_final_20261024-014712.json"
+ }
+}

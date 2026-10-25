@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CARDION &middot; Validation mode</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="heart">&#9829;</span> CARDION <small>accuracy validation against a reference monitor</small></div>
+  <div class="pills">
+    <a class="pill navlink" href="/">&larr; Measurement page</a>
+    <span class="pill" title="Research prototype">Not a medical device</span>
+  </div>
+</header>
+
+<main>
+  <section class="left">
+    <div class="card videos single">
+      <div class="vwrap"><img id="rgbImg" alt="Camera preview" src="" /><svg id="overlay" class="overlay hidden" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><g id="ovMirror"><rect id="ovTarget" rx="3"/><g id="ovOthers"></g><rect id="ovFace" rx="2"/></g></svg>
+        <div id="gStage" class="gstage hidden"></div>
+        <div id="guideBanner" class="gbanner hidden" role="status" aria-live="polite"><span id="gIcon" class="gicon" aria-hidden="true"></span><span id="gText"></span></div>
+        <div id="edgeArrow" class="edgearrow hidden" aria-hidden="true"></div>
+        <div id="gProg" class="gprog hidden" aria-hidden="true"><i></i></div>
+        <div id="placeholder" class="placeholder">The camera preview appears when you start a session.<br>No video is saved unless you tick the box.</div></div>
+    </div>
+
+    <div class="card bpm">
+      <h3>CARDION reading</h3>
+      <div class="bpmrow">
+        <div class="bpmbox"><div id="bpm" class="bignum stale">&mdash;</div><div class="unit">beats per minute</div></div>
+        <div class="statuswrap">
+          <div id="status" class="badge">Waiting</div>
+          <div id="bpmState" class="bpmstate" role="status" aria-live="polite"></div>
+          <div id="why" class="muted small"></div>
+        </div>
+      </div>
+      <div class="refbox">
+        <div><div class="muted small">Latest reference reading</div><div id="refLatest" class="refnum">&mdash;</div></div>
+        <div><div class="muted small">Matched CARDION reading</div><div id="refMatch" class="refnum">&mdash;</div></div>
+        <div><div class="muted small">Difference (CARDION &minus; reference)</div><div id="refDiff" class="refnum">&mdash;</div></div>
+      </div>
+      <div id="refWhy" class="muted small"></div>
+      <ol id="steps" class="steps" aria-label="Measurement progress"></ol>
+      <div id="collectBar" class="collectbar hidden" aria-hidden="true"><i></i></div>
+      <div id="collectTxt" class="muted small"></div>
+      <div id="notice" class="notice hidden"></div>
+    </div>
+
+    <div class="card">
+      <h3>Measurement quality <small>(each item is measured separately)</small></h3>
+      <ul id="checks" class="checks"></ul>
+    </div>
+  </section>
+
+  <section class="right">
+    <div class="card" id="setupCard">
+      <h3>1. Set up a session</h3>
+      <div class="formgrid">
+        <label>Participant (anonymous code)<input type="text" id="vParticipant" placeholder="P001" list="vParticipants" autocomplete="off"></label>
+        <datalist id="vParticipants"></datalist>
+        <label>Reference device<select id="vDevice"></select></label>
+        <label>Device note <small class="muted">(model, wrist &mdash; optional)</small><input type="text" id="vDeviceNote" placeholder="e.g. left wrist" maxlength="200"></label>
+        <label>Condition<select id="vCondition"></select></label>
+        <label>Visit / day<input type="text" id="vVisit" maxlength="40"></label>
+        <label>Length<select id="vLength"><option value="60" selected>60 s (recommended)</option><option value="90">90 s</option><option value="120">120 s</option><option value="180">180 s</option></select></label>
+        <label>Source<select id="vSource"><option value="camera" selected>Live camera</option><option value="demo">Built-in simulated face (software test only)</option></select></label>
+        <label id="vCamRow">Camera<select id="vCam"></select></label>
+      </div>
+      <label class="check"><input type="checkbox" id="vConsent"> The participant (or I, if this is my own measurement) has agreed to take part, and I have followed the consent and privacy steps in the study guide.</label>
+      <label class="check"><input type="checkbox" id="vVideo"> Also save a preview video of the camera <span class="muted small">(shows the face &mdash; leave unticked unless you need it and have permission)</span></label>
+      <div class="row"><button id="vStart" class="primary">Start timed measurement</button><span id="vMsg" class="muted"></span></div>
+      <details class="how"><summary>How to run a good measurement</summary>
+        <ol>
+          <li>Let the participant sit and rest quietly for about 3 minutes first.</li>
+          <li>Seat them at arm&rsquo;s length, face lit evenly (a window or lamp in front, not behind), looking at the camera, with the reference monitor where you can read it without them turning.</li>
+          <li>Press <b>Start</b>. For the first ~10 s CARDION is collecting data; nothing is asked of you.</li>
+          <li>When the screen prompts (about every 15 s from 20 s), read the reference monitor, type the number and press <b>Enter</b>. If you read it a few seconds earlier, pick &ldquo;from N s ago&rdquo;.</li>
+          <li>Stay still until the timer ends; the report appears automatically.</li>
+        </ol></details>
+    </div>
+
+    <div class="card hidden" id="runCard">
+      <h3>2. Measuring <span id="vWho" class="muted small"></span></h3>
+      <div class="timerrow"><div id="vTimer" class="timer">00:00</div><div class="muted">of <span id="vDur">1:00</span></div><div class="grow"></div><button id="vStop" class="ghost">Stop now</button></div>
+      <div class="progress"><i id="vBar"></i></div>
+      <div id="vPrompts" class="prompts"></div>
+      <div class="refentry">
+        <label>Reference reading (BPM)<input type="number" inputmode="numeric" id="vRef" min="30" max="220" step="1" placeholder="e.g. 72"></label>
+        <label>This reading is from<select id="vAgo"><option value="0">right now</option><option value="5">about 5 s ago</option><option value="10">about 10 s ago</option><option value="15">about 15 s ago</option><option value="30">about 30 s ago</option></select></label>
+        <button id="vAdd" class="primary">Log reading</button>
+      </div>
+      <div id="vRefMsg" class="muted small"></div>
+      <div class="stats" id="vStats"></div>
+    </div>
+
+    <div class="card">
+      <h3>Heart rate over the session</h3>
+      <canvas id="vChart" width="640" height="230"></canvas>
+      <div class="legend"><span><i style="background:#4da3ff"></i>CARDION (reliable readings only)</span><span><i style="background:#fff;border:1px solid #888"></i>reference readings</span><span><i style="background:#5b2a2a"></i>CARDION withheld a reading</span></div>
+    </div>
+
+    <div class="card" id="entriesCard">
+      <h3>Reference readings <small>(you can correct or delete them; every change is logged)</small></h3>
+      <table id="vEntries"><thead><tr><th>#</th><th>Time</th><th>Reference</th><th>CARDION</th><th>Difference</th><th></th></tr></thead><tbody id="vEntriesBody"></tbody></table>
+      <div class="row import"><label class="filebtn">Import reference file&hellip;<input id="vImport" type="file" accept=".csv,.txt,.xml"></label>
+        <span class="muted small">CSV with <code>time_s,bpm</code> or <code>timestamp,bpm</code>, or an Apple Health <code>export.xml</code>. Optional.</span></div>
+      <div id="vImportMsg" class="muted small"></div>
+    </div>
+
+    <div class="card hidden" id="reportCard">
+      <h3>3. Result</h3>
+      <div id="vHeadline" class="headline"></div>
+      <div id="vReport"></div>
+      <div class="row">
+        <a id="vOpenReport" class="btnlink" target="_blank" rel="noopener">Open full report</a>
+        <a id="vZip" class="btnlink">Download session (.zip)</a>
+        <a id="vPairs" class="btnlink" target="_blank" rel="noopener">pairs.csv</a>
+        <a id="vEst" class="btnlink" target="_blank" rel="noopener">estimates.csv</a>
+        <button id="vFolder" class="ghost">Open data folder</button>
+        <button id="vNew" class="ghost">New session</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Study overview <small>(real-camera sessions only; each participant counts once)</small></h3>
+      <div class="row"><button id="vStudyBtn" class="ghost">Refresh overview</button><a id="vStudyLink" class="btnlink" target="_blank" rel="noopener">Open study report</a></div>
+      <div id="vStudy" class="muted small">Press Refresh to summarise all saved sessions.</div>
+      <div id="vSessions" class="sessions"></div>
+    </div>
+  </section>
+</main>
+<footer>Research prototype &mdash; not a medical device. A consumer watch is a useful but imperfect reference. See <code>docs/VALIDATION_PROTOCOL.md</code> for the study design and the consent / privacy checklist.</footer>
+<script src="/static/shared.js"></script>
+<script src="/static/validate.js"></script>
+</body>
+</html>
