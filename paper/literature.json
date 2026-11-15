@@ -18,7 +18,7 @@
       "limitations_stated": "flicker, hand tremor (3 of 6 failures), lighting variation, possible delay between exercise and manual watch reading"
     },
     "empd": {
-      "bibkey": "feng2026empd", "status": "arXiv preprint (17 Mar 2026); dataset on Zenodo (CC BY 4.0)", "arxiv": "2603.26699",
+      "bibkey": "feng2026empd", "status": "arXiv preprint (17 Mar 2026)", "arxiv": "2603.26699",
       "sensor": "real event camera (Prophesee EVK4) + industrial RGB camera; 660 nm laser illumination aimed at the radial artery (wrist), not a face", "dataset": "193 valid records, 83 subjects, 40-110 BPM, rest and post-exercise; finger-clip oximeter reference at 60 Hz; 9 archive parts (first part 46.4 GB)",
       "reported": {"records": 193, "subjects": 83, "hr_min": 40, "hr_max": 110, "record_seconds": 68},
       "limitations_stated": "the abstract page reports no benchmark errors"

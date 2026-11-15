@@ -22,7 +22,7 @@ Everything below was **run during this audit** unless it says "previously saved"
 | Bibliography (`scripts/verify_refs.py`) | 42 of 44 entries confirmed automatically against Crossref/arXiv; 2 confirmed manually (`docs/REFERENCES_VERIFIED.md`) |
 | Manuscript build (`scripts/build_paper.ps1`) | 11 pages, no undefined references or errors, 0 overfull boxes; PDF metadata author "Jacob Mullen" |
 | arXiv package | compiled from a clean directory (3 pdfLaTeX passes with the supplied `.bbl`): 11 pages, text **identical** to the project PDF; all file names meet arXiv's character rules. Compiled with MiKTeX, not arXiv's TeX Live - preview on arXiv before submitting. |
-| Release archives (`scripts/verify_release.py`, run on the finished zips) | no byte-order marks; `.zenodo.json` strict JSON; `CITATION.cff` validates against the CFF 1.2.0 schema (cffconvert); author Jacob Mullen with no affiliation; versions agree; README equals the release template; no scratch/private/third-party files; Python files compile; Markdown links resolve; arXiv archive: root layout, file names, every figure/table present, `main.tex` identical to the repository copy, compiles with no undefined references and the same text as `paper/main.pdf` |
+| Release archives (`scripts/verify_release.py`, run on the finished zips) | no byte-order marks; `CITATION.cff` validates against the CFF 1.2.0 schema (cffconvert); author Jacob Mullen with no affiliation; versions agree; README equals the release template; no scratch/private/third-party files; Python files compile; Markdown links resolve; arXiv archive: root layout, file names, every figure/table present, `main.tex` identical to the repository copy, compiles with no undefined references and the same text as `paper/main.pdf` |
 | Public-tree commands in a fresh environment (`pip install -r requirements.txt` from the extracted zip) | `pytest` 82 passed / 17 skipped; `check_claims.py` 191/191; `paper_analysis.py` runs; `reconcile_windows.py` and `test_history_audit.py` exit with an explanation when the data or development history is absent; `build_paper.py` regenerates `main.tex` and reports that no LaTeX is installed |
 | Release scan | no local paths, user names, e-mail addresses, secret-like strings or files over 25 MB in the staged public tree; no broken relative Markdown links |
 
@@ -34,5 +34,5 @@ Everything below was **run during this audit** unless it says "previously saved"
 * No clean-room build of the Windows environment through `Launch CARDION.bat` in this audit (it downloads about 1.5 GB; done in earlier sessions); the launcher files are unchanged since.
 * No re-run of the training or of the full evaluation from raw video; no run on macOS or Linux.
 * No real-camera test with a person present; no comparison with a reference monitor (validation mode exists but contains no data).
-* GitHub and Zenodo flows (repository creation, release, DOI minting, `.zenodo.json` validation) were not exercised; nothing was published.
+* GitHub publication flows (repository creation and release) were not exercised; nothing was published.
 * arXiv's own TeX Live compilation was not available.

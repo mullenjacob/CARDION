@@ -81,15 +81,15 @@ LAY_SUMMARY = ("Can a heartbeat be read from webcam video after the video is tur
 
 
 def plain(tex: str) -> str:
-    """Rough LaTeX -> plain text for the Zenodo description."""
+    """Rough LaTeX -> plain text for the release summary."""
     tex = re.sub(r"\\emph\{([^}]*)\}", r"\1", tex)
     tex = tex.replace("\\ref{sec:setup}", "V").replace("\\%", "%")
     tex = tex.replace("\\,", " ").replace("~", " ").replace("\\_", "_").replace("$", "").replace("--", "-")
     return re.sub(r"\s+", " ", tex).strip()
 
 
-def write_zenodo(text: str) -> None:
-    """Write paper/README_zenodo.md (title, authors, abstract, keywords, licence) from the filled paper."""
+def write_release_summary(text: str) -> None:
+    """Write paper/README_release.md (title, authors, abstract, keywords, licence) from the filled paper."""
     abstract = plain(re.search(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", text, re.S).group(1))
     title = plain(re.search(r"\\title\{(.*?)\}\n", text, re.S).group(1).replace("\\\\", " "))
     words = len(abstract.split())
@@ -101,8 +101,8 @@ def write_zenodo(text: str) -> None:
           "## License\n\nCode: MIT. Paper text and figures: CC BY 4.0 (recommended default; the author decides before upload).\n\n"
           "## AI-assistance disclosure\n\nSoftware, analysis and manuscript drafts were produced with AI assistance (Claude, Anthropic) under the author's direction; "
           "see the Declarations section of the paper. The author is responsible for the content.\n")
-    (PAPER / "README_zenodo.md").write_text(md, encoding="utf-8")
-    print(f"wrote paper/README_zenodo.md (abstract {words} words)")
+    (PAPER / "README_release.md").write_text(md, encoding="utf-8")
+    print(f"wrote paper/README_release.md (abstract {words} words)")
 
 
 def main() -> None:
@@ -125,7 +125,7 @@ def main() -> None:
     text = fill(raw, claims)
     (PAPER / "main.tex").write_text(text, encoding="utf-8")
     print("wrote paper/main.tex")
-    write_zenodo(text)
+    write_release_summary(text)
     if args.no_compile:
         return
     ok = compile_latex()

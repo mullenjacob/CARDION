@@ -28,4 +28,4 @@ The published release uses MIT for original code and CC BY 4.0 for the research 
 
 Keep the copyright and licence notices when sharing code. Credit **Jacob Mullen**, link to CC BY 4.0 and indicate changes when sharing research materials or adaptations. Retain the dataset attribution above where applicable.
 
-Please cite CARDION using https://doi.org/10.5281/zenodo.23647425. The licence texts in [LICENSE](LICENSE) and [LICENSES/CC-BY-4.0.txt](LICENSES/CC-BY-4.0.txt) contain the full terms.
+Please cite CARDION using this repository's citation metadata. The licence texts in [LICENSE](LICENSE) and [LICENSES/CC-BY-4.0.txt](LICENSES/CC-BY-4.0.txt) contain the full terms.

@@ -89,7 +89,7 @@ python -m src.evaluate --report "out/results_mcd-test_final_*.json" # tables + f
 python scripts/build_paper.py                                        # paper/main.pdf (fails if any number is not in paper/claims.json)
 ```
 
-Diagnostics: `scripts/summarize_diag.py`, `scripts/real_video_diagnostics.py`, `scripts/event_vs_intensity.py`, `scripts/noise_study.py`, `scripts/compression_study.py`, `scripts/summarize_budget.py`, `scripts/app_real_video_check.py`, `scripts/anchor_toolbox.py`. Bibliography checks (`scripts/fetch_bib.py`, `scripts/verify_refs.py`) need internet. Publication-packaging scripts (`make_release.py`, `verify_release.py`, `finalize_availability.py`) are maintainer-only.
+Diagnostics: `scripts/summarize_diag.py`, `scripts/real_video_diagnostics.py`, `scripts/event_vs_intensity.py`, `scripts/noise_study.py`, `scripts/compression_study.py`, `scripts/summarize_budget.py`, `scripts/app_real_video_check.py`, `scripts/anchor_toolbox.py`. Bibliography checks (`scripts/fetch_bib.py`, `scripts/verify_refs.py`) need internet. Publication-packaging scripts (`make_release.py`, `verify_release.py`) are maintainer-only.
 
 Re-running overwrites files in `out/` with new time-stamped results; the saved results that the paper uses are kept in `out/`, so back them up first if you want to compare.
 

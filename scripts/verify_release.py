@@ -2,8 +2,7 @@
 
     python scripts/verify_release.py CARDION-v1.0.0.zip CARDION_arxiv_submission.zip [--readme release/README_public.md] [--compile]
 
-Checks on the repository archive: every entry under ``CARDION/``, forward slashes, no byte-order marks in text files, ``.zenodo.json`` parses with a strict
-JSON parser, ``CITATION.cff`` parses and (when ``cffconvert`` is installed) validates against the CFF 1.2.0 schema, author is exactly Jacob Mullen without an
+Checks on the repository archive: every entry under ``CARDION/``, forward slashes, no byte-order marks in text files, ``CITATION.cff`` parses and (when ``cffconvert`` is installed) validates against the CFF 1.2.0 schema, author is exactly Jacob Mullen without an
 affiliation, versions agree, README equals the release template, no scratch/private/third-party files, no personal strings or paths, Python files compile,
 Markdown links resolve, no case-insensitive duplicate names.
 Checks on the arXiv archive: files at the archive root, arXiv file-name rule, ``main.tex`` + ``main.bbl``, every figure/table resolves, no hidden or auxiliary
@@ -30,7 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 TEXT_EXT = {".py", ".md", ".ps1", ".bat", ".yaml", ".yml", ".json", ".cff", ".tex", ".in", ".txt", ".bib", ".html", ".js", ".css", ".ini", ".bbl"}
-TEXT_NAMES = {".gitignore", ".zenodo.json", "VERSION", "LICENSE"}
+TEXT_NAMES = {".gitignore", "VERSION", "LICENSE"}
 # strings assembled from fragments so this file does not contain them itself
 FORBIDDEN = ["jm" + "700", "mullen" + "jacob", r"C:\\" + "Users", "C:/" + "Users", "App" + "Data", "Pine" + " Crest", r"(?i)api[_-]?key\s*[=:]\s*\S{8,}",
              r"(?i)password\s*[=:]\s*\S{6,}", r"ghp_[A-Za-z0-9]{20,}", r"sk-[A-Za-z0-9]{20,}", "@" + "gmail", "@" + "hotmail"]
@@ -89,30 +88,9 @@ def check_repo(zpath: Path, readme_template: Path | None, final: dict | None = N
             if m:
                 problems.append(f"{n}:{t[:m.start()].count(chr(10)) + 1}: personal/forbidden string {pat!r}")
     # --- metadata
-    zen = texts.get("CARDION/.zenodo.json")
     cff = texts.get("CARDION/CITATION.cff")
     version = texts.get("CARDION/VERSION", "").strip()
     info["version_file"] = version
-    if zen is None:
-        problems.append("missing .zenodo.json")
-    else:
-        try:
-            zd = json.loads(zen)                                        # strict: no utf-8-sig
-            info["zenodo_keys"] = sorted(zd)
-            for k in ("title", "upload_type", "description", "creators", "license", "version"):
-                if k not in zd:
-                    problems.append(f".zenodo.json lacks {k}")
-            if [c.get("name") for c in zd.get("creators", [])] != ["Mullen, Jacob"]:
-                problems.append(f".zenodo.json creators unexpected: {zd.get('creators')}")
-            if any("affiliation" in c or "orcid" in c for c in zd.get("creators", [])):
-                problems.append(".zenodo.json creator has an affiliation/ORCID entry (author has none)")
-            if zd.get("version") != version:
-                problems.append(f".zenodo.json version {zd.get('version')} != VERSION {version}")
-            for k in ("related_identifiers", "doi", "prereserve_doi"):
-                if k in zd:
-                    problems.append(f".zenodo.json contains {k}: must not be filled before the real DOI exists")
-        except json.JSONDecodeError as e:
-            problems.append(f".zenodo.json is not strict JSON: {e}")
     if cff is None:
         problems.append("missing CITATION.cff")
     else:
@@ -295,7 +273,7 @@ def main() -> None:
     ap.add_argument("--readme", type=Path, default=ROOT / "release" / "README_public.md")
     ap.add_argument("--compile", action="store_true", help="also compile the arXiv sources in a clean directory")
     ap.add_argument("--repo-url", help="real GitHub URL (post-publication stage): the paper and CITATION.cff must carry it")
-    ap.add_argument("--doi", help="real Zenodo DOI, e.g. 10.5281/zenodo.123 (post-publication stage)")
+    ap.add_argument("--doi", help="archive DOI (post-publication stage)")
     a = ap.parse_args()
     if bool(a.repo_url) != bool(a.doi):
         raise SystemExit("give --repo-url and --doi together, or neither")

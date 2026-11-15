@@ -5,7 +5,7 @@
 Creates, next to the working project (default ``../CARDION_release``):
 
 * ``CARDION/``                 clean public-repository tree (code, tests, configs, models, split manifests, saved results used by the paper, paper sources, docs)
-* ``CARDION-v<version>.zip``   the same tree as one archive (what a GitHub release / manual Zenodo upload would contain)
+* ``CARDION-v<version>.zip``   the same tree as one archive (what a GitHub release would contain)
 * ``arxiv/``  and ``CARDION_arxiv_submission.zip``   self-contained LaTeX submission (generated main.tex, main.bbl, figures, tables)
 * ``publication_private/``     checklists and guides that must NOT go into the public repository (copied from ``publication/``)
 
@@ -149,7 +149,7 @@ def build_repo(stage: Path, version: str) -> dict:
         copy(ROOT / a, repo / a)
     (repo / "paper" / "claims.json").write_text(json.dumps(keep_claims, indent=1), encoding="utf-8")
     # --- release templates
-    for src, dst in (("README_public.md", "README.md"), ("LICENSING.md", "LICENSING.md"), ("CITATION.cff", "CITATION.cff"), ("zenodo.json", ".zenodo.json"),
+    for src, dst in (("README_public.md", "README.md"), ("LICENSING.md", "LICENSING.md"), ("CITATION.cff", "CITATION.cff"),
                      ("gitignore_public", ".gitignore"), ("CC-BY-4.0.txt", "LICENSES/CC-BY-4.0.txt")):
         copy(ROOT / "release" / src, repo / dst)
     mit = (ROOT / "LICENSE").read_text(encoding="utf-8")
@@ -168,7 +168,7 @@ def scrub(repo: Path) -> list[str]:
             continue
         if p.stat().st_size > MAX_MB * 1e6:
             problems.append(f"{p.relative_to(repo)}: larger than {MAX_MB} MB")
-        if p.suffix.lower() in TEXT_EXT or p.name in (".gitignore", ".zenodo.json", "LICENSE", "VERSION"):
+        if p.suffix.lower() in TEXT_EXT or p.name in (".gitignore", "LICENSE", "VERSION"):
             raw = p.read_bytes()
             t = raw.decode("utf-8", errors="replace")
             t2 = t.lstrip("﻿")                                  # no byte-order marks (strict JSON parsers reject them)
@@ -241,7 +241,7 @@ def main() -> None:
     if pp.exists():
         shutil.copytree(pp, stage / "publication_private")
     from scripts.verify_release import verify                  # inspects the finished archives, not just the staging folders
-    fl = ROOT / "release" / "final_links.json"                  # written by finalize_availability.py once real links exist
+    fl = ROOT / "release" / "final_links.json"
     final = json.loads(fl.read_text(encoding="utf-8")) if fl.exists() else None
     vr = verify(stage / f"CARDION-v{a.version}.zip", stage / "CARDION_arxiv_submission.zip", ROOT / "release" / "README_public.md", final=final)
     info["archive_check"] = vr

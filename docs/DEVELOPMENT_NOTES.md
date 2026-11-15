@@ -184,13 +184,9 @@ as reported; numpy/scipy/yaml (shallow files) imported fine.
 
 ## Session 9 - publication preparation (final audit)
 * Paper corrections: test-set history (abstract and Section V), window counts reconciled exactly (`scripts/reconcile_windows.py`; Table II now uses the evaluation's fixed-1794-frame excerpts), Spiking-PhysFormer figures (journal 10.1 % vs preprint 12.4 %; block 12.2x), "information loss" wording replaced by observed-accuracy / hypothesis language, AI-disclosure paragraph extended, appendix reorganised (12 pages). Details: publication/SCIENTIFIC_CORRECTIONS.md.
-* New scripts: `scripts/test_history_audit.py`, `scripts/reconcile_windows.py`, `scripts/make_release.py` (staging area, scans, arXiv zip), `scripts/finalize_availability.py` (writes real links after publication; refuses placeholders).
-* `release/` holds the public README, licensing files and Zenodo metadata templates; `publication/` the private guides. Staging output: `../CARDION_release/`.
 * Tests: 98 passed / 1 skipped; self-test 18/18; clean-environment run of the staged tree 82-83 passed, 16-17 skipped, 0 failed (docs/REPRODUCIBILITY_REPORT.md).
 * Nothing was uploaded, reserved or published.
 
 ## Session 10 - publication-package cleanup
-* BOMs removed from release templates (zenodo.json, CITATION.cff, gitignore_public, LICENSE) and make_release.scrub() now strips BOMs / normalises LF in staged text files; both metadata files validated (strict json.loads; cffconvert, CFF 1.2.0).
 * scripts/verify_release.py inspects the finished zips (BOM, metadata, README = template, private strings, arXiv layout/compile/PDF-text identity, optional final-link consistency); make_release.py runs it and fails on any problem.
 * MCD-rPPG licence verified on the official page (cc-by-4.0, Hugging Face API, 2026-10-25); one sentence in the paper, docs and checklists updated. README (root + public) statements on test-split history and live-webcam validation corrected.
-* test_history_audit.py / reconcile_windows.py exit with an explanation when history/data are absent (maintainer-only); publication sequence rewritten as two releases (v1.0.0 -> DOI -> v1.0.1 with links), enforced by finalize_availability.py + verify_release.py.

@@ -8,4 +8,4 @@ The window-level estimates were identical across both runs for 696 method-clip p
 
 Later gate audits, paired effect sizes, per-subject views and the real-time pipeline check reused saved test outputs and are descriptive or exploratory. One test clip was also opened during frame-rate debugging. The test subjects were therefore no longer unseen after the first evaluation.
 
-The original and corrected saved outputs and additional provenance are preserved in the published v1.0.0 archive: https://doi.org/10.5281/zenodo.23647425 . The manuscript distinguishes confirmatory comparisons from later exploratory analyses. Internal development commit references are omitted from this GitHub summary.
+The manuscript distinguishes confirmatory comparisons from later exploratory analyses. Internal development commit references are omitted from this GitHub summary.

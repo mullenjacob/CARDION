@@ -1,9 +1,6 @@
 # CARDION
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23647425.svg)](https://doi.org/10.5281/zenodo.23647425)
-
 Repository: https://github.com/mullenjacob/CARDION  
-Archived release v1.0.0: https://doi.org/10.5281/zenodo.23647425
 
 **Does event emulation preserve the pulse?** Code, trained models, saved results and paper for a subject-disjoint study of heart-rate estimation from real webcam video with frame-based RGB estimators, **simulated** event-camera processing, a spiking neural network (SNN) and a matched ReLU network.
 
@@ -21,7 +18,7 @@ CARDION is free to use, modify and share, including commercially.
 
 Third-party materials keep their own licences. See [LICENSING.md](LICENSING.md) for details.
 
-Please cite CARDION using its [Zenodo DOI](https://doi.org/10.5281/zenodo.23647425) or GitHub's **Cite this repository** button.
+Please cite CARDION using GitHub's **Cite this repository** button.
 
 ## What CARDION investigates
 
@@ -70,7 +67,7 @@ python scripts/reconcile_windows.py            # reconciles dataset-table and ev
 python scripts/test_history_audit.py           # documents the test-split history (maintainer-only: needs the original development git history, which this repository does not contain, and then exits with an explanation; the recorded evidence is in `docs/TEST_SPLIT_HISTORY.md`, see also paper Section V)
 ```
 
-*Maintainer-only scripts* (they need the author's development history, local tools or accounts and are not part of reproducing the results): `scripts/test_history_audit.py` (exits with an explanation when the history is absent), `scripts/make_release.py`, `scripts/verify_release.py` and `scripts/finalize_availability.py` (publication packaging), `scripts/fetch_bib.py` and `scripts/verify_refs.py` (need internet), `scripts/profile_live.py`, `scripts/bench_threads.py` and `scripts/fps_effect.py` (timing on one particular PC).
+*Maintainer-only scripts* (they need the author's development history, local tools or accounts and are not part of reproducing the results): `scripts/test_history_audit.py` (exits with an explanation when the history is absent), `scripts/make_release.py`, `scripts/verify_release.py` (publication packaging), `scripts/fetch_bib.py` and `scripts/verify_refs.py` (need internet), `scripts/profile_live.py`, `scripts/bench_threads.py` and `scripts/fps_effect.py` (timing on one particular PC).
 
 *Rebuild the manuscript* (compiling needs a LaTeX distribution with `IEEEtran`; without one the script still regenerates `paper/main.tex` and says so): `python scripts/build_paper.py` regenerates `paper/main.tex` from `paper/main.tex.in` and `paper/claims.json` (it refuses to build if a number is not registered) and compiles `paper/main.pdf`.
 
