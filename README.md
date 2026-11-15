@@ -1,10 +1,14 @@
 # CARDION
 
-Repository: https://github.com/mullenjacob/CARDION  
+**Track:** Health
+
+**Author:** Jacob Mullen
+
+**Repository:** https://github.com/mullenjacob/CARDION
 
 **Does event emulation preserve the pulse?** Code, trained models, saved results and paper for a subject-disjoint study of heart-rate estimation from real webcam video with frame-based RGB estimators, **simulated** event-camera processing, a spiking neural network (SNN) and a matched ReLU network.
 
-> Research prototype. **Not a medical device**; no clinical validation. Events are *emulated* from ordinary video - **no event-camera hardware is used**, and nothing here is evidence about physical event sensors. The paper is a preprint (not peer reviewed).
+> Research prototype. **Not a medical device.** CARDION is not clinically validated and does not provide medical advice. Events are *emulated* from ordinary video - **no event-camera hardware is used**, and nothing here is evidence about physical event sensors. The paper is a preprint (not peer reviewed).
 
 Paper: Jacob Mullen, *Does Event Emulation Preserve the Pulse? Frame-Based, Simulated-Event and Spiking Heart-Rate Estimators on Real Webcam Video* - [`paper/main.pdf`](paper/main.pdf).
 How to cite: see [`CITATION.cff`](CITATION.cff). Licences: see [`LICENSING.md`](LICENSING.md).
@@ -79,9 +83,9 @@ The main experiments use **MCD-rPPG** only (real webcam video, 36/12/12 subject-
 
 | material | source | licence / terms |
 |---|---|---|
-| MCD-rPPG videos and PPG | Hugging Face `kyegorov/mcd_rppg`; Egorov et al., ACM MM 2025, doi:10.1145/3746027.3758255 | CC BY 4.0 (official dataset page, checked 2026-10-25); `python scripts/download_mcd.py` |
+| MCD-rPPG videos and PPG | [Hugging Face dataset](https://huggingface.co/datasets/kyegorov/mcd_rppg); Egorov et al., ACM MM 2025, doi:10.1145/3746027.3758255 | CC BY 4.0 (official dataset page, checked 2026-10-25); `python scripts/download_mcd.py` |
 | SCAMPS 10-video example (diagnostics only) | https://github.com/danmcduff/scampsdataset | see upstream |
-| MediaPipe face-landmarker model | downloaded automatically from Google | see upstream model card |
+| MediaPipe face-landmarker model | [Google MediaPipe Face Landmarker models](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker#models), downloaded automatically | see upstream model card |
 | rPPG-Toolbox reference subset (anchor check only) | https://github.com/ubicomplab/rPPG-Toolbox via `scripts/fetch_third_party.py` | Responsible AI Source Code License v1.1 - read it before use |
 | v2e (optional cross-check) | https://github.com/SensorsINI/v2e | MIT |
 
@@ -93,7 +97,7 @@ Simulated events only; one dataset and 12 test subjects (wide intervals; non-sig
 
 ## AI assistance
 
-Much of the software, experiment execution, analysis, literature search and first drafting was done with an AI coding assistant (Claude, Anthropic) under the author's direction; the paper's Declarations section describes this. The author is responsible for the content.
+Much of the software, experiment execution, analysis, literature search and first drafting was done with an AI coding assistant ([Claude Code by Anthropic](https://www.anthropic.com/claude-code)) under the author's direction; the paper's Declarations section describes this. The author is responsible for the content.
 
 ## Repository map
 
