@@ -1,0 +1,290 @@
+{
+  "clips": [
+    "synthetic:0",
+    "synthetic:1",
+    "synthetic:2"
+  ],
+  "thresholds": [
+    0.02,
+    0.1
+  ],
+  "settings": [
+    "default",
+    "no leak",
+    "no leak, no shot",
+    "no leak, no shot, aligned refs",
+    "strong leak 0.5 Hz"
+  ],
+  "rows": [
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.02,
+      "setting": "default",
+      "rate": 1.6058861911131184,
+      "abs_r_green": 0.9216357027043857,
+      "abs_r_unsigned_vs_absderiv": 0.38237904084476104,
+      "abs_r_null": 0.02534641600524318
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.02,
+      "setting": "no leak",
+      "rate": 1.5362932206260422,
+      "abs_r_green": 0.915460221521598,
+      "abs_r_unsigned_vs_absderiv": 0.3897355365254081,
+      "abs_r_null": 0.016422328223363567
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.02,
+      "setting": "no leak, no shot",
+      "rate": 1.4861962157795998,
+      "abs_r_green": 0.9154692825207289,
+      "abs_r_unsigned_vs_absderiv": 0.38907543737883127,
+      "abs_r_null": 0.017389905569646882
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.02,
+      "setting": "no leak, no shot, aligned refs",
+      "rate": 1.4781893803849362,
+      "abs_r_green": 0.9126734110743716,
+      "abs_r_unsigned_vs_absderiv": 0.3827007230191016,
+      "abs_r_null": 0.02145206696792368
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.02,
+      "setting": "strong leak 0.5 Hz",
+      "rate": 1.9228279491210394,
+      "abs_r_green": 0.8988566502232487,
+      "abs_r_unsigned_vs_absderiv": 0.5847483267708258,
+      "abs_r_null": 0.025456769492396464
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.1,
+      "setting": "default",
+      "rate": 0.11259239073790994,
+      "abs_r_green": 0.5915901680652561,
+      "abs_r_unsigned_vs_absderiv": 0.44629493535658155,
+      "abs_r_null": 0.02831360699822534
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.1,
+      "setting": "no leak",
+      "rate": 0.07373345434963868,
+      "abs_r_green": 0.31885452912466977,
+      "abs_r_unsigned_vs_absderiv": 0.1483475482861028,
+      "abs_r_null": 0.11540626437891652
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.1,
+      "setting": "no leak, no shot",
+      "rate": 0.02363644950319622,
+      "abs_r_green": 0.3685214922842307,
+      "abs_r_unsigned_vs_absderiv": 0.14595945555359405,
+      "abs_r_null": 0.11355996490728312
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.1,
+      "setting": "no leak, no shot, aligned refs",
+      "rate": 0.017621823321984434,
+      "abs_r_green": 0.32125104096021295,
+      "abs_r_unsigned_vs_absderiv": 0.13696518201243843,
+      "abs_r_null": 0.0716887803036128
+    },
+    {
+      "clip": "synthetic:0",
+      "threshold": 0.1,
+      "setting": "strong leak 0.5 Hz",
+      "rate": 0.4960383806976098,
+      "abs_r_green": 0.922364748960077,
+      "abs_r_unsigned_vs_absderiv": 0.6542998133343717,
+      "abs_r_null": 0.01568708566419974
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.02,
+      "setting": "default",
+      "rate": 1.3626521027306835,
+      "abs_r_green": 0.9684320911635751,
+      "abs_r_unsigned_vs_absderiv": 0.7085040984759002,
+      "abs_r_null": 0.019495065539680945
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.02,
+      "setting": "no leak",
+      "rate": 1.2652455574277377,
+      "abs_r_green": 0.969675562102126,
+      "abs_r_unsigned_vs_absderiv": 0.7030764836168626,
+      "abs_r_null": 0.021492649787287606
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.02,
+      "setting": "no leak, no shot",
+      "rate": 1.2151485525812953,
+      "abs_r_green": 0.9698285606205365,
+      "abs_r_unsigned_vs_absderiv": 0.7025317562640584,
+      "abs_r_null": 0.021487261993838
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.02,
+      "setting": "no leak, no shot, aligned refs",
+      "rate": 1.205009727626459,
+      "abs_r_green": 0.9690037799627718,
+      "abs_r_unsigned_vs_absderiv": 0.7040522475246678,
+      "abs_r_null": 0.020868420358591495
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.02,
+      "setting": "strong leak 0.5 Hz",
+      "rate": 1.7169735682149805,
+      "abs_r_green": 0.9435172775864406,
+      "abs_r_unsigned_vs_absderiv": 0.5746006889398685,
+      "abs_r_null": 0.019109161609928493
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.1,
+      "setting": "default",
+      "rate": 0.10765800878960534,
+      "abs_r_green": 0.6660133130732665,
+      "abs_r_unsigned_vs_absderiv": 0.5313796502363907,
+      "abs_r_null": 0.020072830645721042
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.1,
+      "setting": "no leak",
+      "rate": 0.0715716087930795,
+      "abs_r_green": 0.31055259948187985,
+      "abs_r_unsigned_vs_absderiv": 0.14338203831597615,
+      "abs_r_null": 0.02857668359874958
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.1,
+      "setting": "no leak, no shot",
+      "rate": 0.021474603946637017,
+      "abs_r_green": 0.36670876718183176,
+      "abs_r_unsigned_vs_absderiv": 0.1326797235807348,
+      "abs_r_null": 0.056948134085860816
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.1,
+      "setting": "no leak, no shot, aligned refs",
+      "rate": 0.015389409046692606,
+      "abs_r_green": 0.38072194948658544,
+      "abs_r_unsigned_vs_absderiv": 0.1180112206243288,
+      "abs_r_null": 0.025414307056353128
+    },
+    {
+      "clip": "synthetic:1",
+      "threshold": 0.1,
+      "setting": "strong leak 0.5 Hz",
+      "rate": 0.4950042775500278,
+      "abs_r_green": 0.9333114185397151,
+      "abs_r_unsigned_vs_absderiv": 0.8404853494849164,
+      "abs_r_null": 0.011094238933255202
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.02,
+      "setting": "default",
+      "rate": 10.172556802390217,
+      "abs_r_green": 0.9904443119384373,
+      "abs_r_unsigned_vs_absderiv": 0.48645081979995336,
+      "abs_r_null": 0.012376194262288809
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.02,
+      "setting": "no leak",
+      "rate": 10.130857475072956,
+      "abs_r_green": 0.9901684425180248,
+      "abs_r_unsigned_vs_absderiv": 0.5000852346831871,
+      "abs_r_null": 0.01239764019862754
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.02,
+      "setting": "no leak, no shot",
+      "rate": 10.080760470226513,
+      "abs_r_green": 0.9901168783496315,
+      "abs_r_unsigned_vs_absderiv": 0.4996208173375257,
+      "abs_r_null": 0.012355292964376811
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.02,
+      "setting": "no leak, no shot, aligned refs",
+      "rate": 10.073168904599777,
+      "abs_r_green": 0.990294891758475,
+      "abs_r_unsigned_vs_absderiv": 0.47381769212725217,
+      "abs_r_null": 0.01377253227060699
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.02,
+      "setting": "strong leak 0.5 Hz",
+      "rate": 10.447390748766676,
+      "abs_r_green": 0.991139981660574,
+      "abs_r_unsigned_vs_absderiv": 0.41796407484267095,
+      "abs_r_null": 0.013072461587991831
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.1,
+      "setting": "default",
+      "rate": 0.13927822314480268,
+      "abs_r_green": 0.6420007257084037,
+      "abs_r_unsigned_vs_absderiv": 0.3495131434775289,
+      "abs_r_null": 0.061673842264917934
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.1,
+      "setting": "no leak",
+      "rate": 0.08555371473735408,
+      "abs_r_green": 0.49836974527957456,
+      "abs_r_unsigned_vs_absderiv": 0.08184116533405499,
+      "abs_r_null": 0.042801231047286864
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.1,
+      "setting": "no leak, no shot",
+      "rate": 0.03545670989091162,
+      "abs_r_green": 0.5960460297818266,
+      "abs_r_unsigned_vs_absderiv": 0.09441870928939096,
+      "abs_r_null": 0.07136419097080553
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.1,
+      "setting": "no leak, no shot, aligned refs",
+      "rate": 0.02353466769733185,
+      "abs_r_green": 0.6881855278161761,
+      "abs_r_unsigned_vs_absderiv": 0.10303104533781389,
+      "abs_r_null": 0.031112885698082408
+    },
+    {
+      "clip": "synthetic:2",
+      "threshold": 0.1,
+      "setting": "strong leak 0.5 Hz",
+      "rate": 0.5022090723144803,
+      "abs_r_green": 0.9072517353954535,
+      "abs_r_unsigned_vs_absderiv": 0.7375781240424711,
+      "abs_r_null": 0.022364526574636334
+    }
+  ]
+}

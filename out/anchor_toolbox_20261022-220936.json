@@ -1,0 +1,128 @@
+{
+  "rows": [
+    {
+      "clip": "synthetic:0",
+      "n_frames": 1800,
+      "fs": 30.0,
+      "pos": {
+        "waveform_corr_ours_vs_toolbox": 0.996914416293176,
+        "window_mae_ours": 0.05170036764705882,
+        "window_mae_toolbox_pulse": 0.034466911764705885,
+        "video_hr_ours": 102.83203125,
+        "video_hr_toolbox": 102.83203125,
+        "video_hr_label": 102.83203125
+      },
+      "chrom": {
+        "waveform_corr_ours_vs_toolbox": 0.9645112237378957,
+        "window_mae_ours": 0.034466911764705885,
+        "window_mae_toolbox_pulse": 0.034466911764705885,
+        "video_hr_ours": 102.83203125,
+        "video_hr_toolbox": 102.83203125,
+        "video_hr_label": 102.83203125
+      }
+    },
+    {
+      "clip": "synthetic:1",
+      "n_frames": 1800,
+      "fs": 30.0,
+      "pos": {
+        "waveform_corr_ours_vs_toolbox": 0.9994664996751884,
+        "window_mae_ours": 0.017233455882352942,
+        "window_mae_toolbox_pulse": 0.017233455882352942,
+        "video_hr_ours": 55.37109375,
+        "video_hr_toolbox": 55.37109375,
+        "video_hr_label": 55.37109375
+      },
+      "chrom": {
+        "waveform_corr_ours_vs_toolbox": 0.9949891264502564,
+        "window_mae_ours": 0.017233455882352942,
+        "window_mae_toolbox_pulse": 0.05170036764705882,
+        "video_hr_ours": 55.37109375,
+        "video_hr_toolbox": 55.37109375,
+        "video_hr_label": 55.37109375
+      }
+    },
+    {
+      "clip": "synthetic:2",
+      "n_frames": 1800,
+      "fs": 30.0,
+      "pos": {
+        "waveform_corr_ours_vs_toolbox": 0.9966983818978953,
+        "window_mae_ours": 0.0861672794117647,
+        "window_mae_toolbox_pulse": 0.0861672794117647,
+        "video_hr_ours": 74.70703125,
+        "video_hr_toolbox": 74.70703125,
+        "video_hr_label": 74.70703125
+      },
+      "chrom": {
+        "waveform_corr_ours_vs_toolbox": 0.9881375138091952,
+        "window_mae_ours": 0.10340073529411764,
+        "window_mae_toolbox_pulse": 0.10340073529411764,
+        "video_hr_ours": 74.70703125,
+        "video_hr_toolbox": 74.70703125,
+        "video_hr_label": 74.70703125
+      }
+    },
+    {
+      "clip": "synthetic:3",
+      "n_frames": 1800,
+      "fs": 30.0,
+      "pos": {
+        "waveform_corr_ours_vs_toolbox": 0.9975366378105248,
+        "window_mae_ours": 0.034466911764705885,
+        "window_mae_toolbox_pulse": 0.034466911764705885,
+        "video_hr_ours": 117.7734375,
+        "video_hr_toolbox": 117.7734375,
+        "video_hr_label": 117.7734375
+      },
+      "chrom": {
+        "waveform_corr_ours_vs_toolbox": 0.976819638202233,
+        "window_mae_ours": 0.06893382352941177,
+        "window_mae_toolbox_pulse": 0.05170036764705882,
+        "video_hr_ours": 117.7734375,
+        "video_hr_toolbox": 117.7734375,
+        "video_hr_label": 117.7734375
+      }
+    },
+    {
+      "clip": "synthetic:4",
+      "n_frames": 1800,
+      "fs": 30.0,
+      "pos": {
+        "waveform_corr_ours_vs_toolbox": 0.9967550846715184,
+        "window_mae_ours": 0.10340073529411764,
+        "window_mae_toolbox_pulse": 0.06893382352941177,
+        "video_hr_ours": 105.46875,
+        "video_hr_toolbox": 105.46875,
+        "video_hr_label": 105.46875
+      },
+      "chrom": {
+        "waveform_corr_ours_vs_toolbox": 0.9631841481889979,
+        "window_mae_ours": 0.0861672794117647,
+        "window_mae_toolbox_pulse": 0.10340073529411764,
+        "video_hr_ours": 105.46875,
+        "video_hr_toolbox": 105.46875,
+        "video_hr_label": 105.46875
+      }
+    }
+  ],
+  "summary": {
+    "pos": {
+      "mean_waveform_corr": 0.9974742040696606,
+      "mean_window_mae_ours": 0.05859375,
+      "mean_window_mae_toolbox": 0.048253676470588244
+    },
+    "chrom": {
+      "mean_waveform_corr": 0.9775283300777156,
+      "mean_window_mae_ours": 0.06204044117647058,
+      "mean_window_mae_toolbox": 0.06893382352941177
+    }
+  },
+  "clips": [
+    "synthetic:0",
+    "synthetic:1",
+    "synthetic:2",
+    "synthetic:3",
+    "synthetic:4"
+  ]
+}

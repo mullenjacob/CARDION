@@ -1,0 +1,12 @@
+$py = ".venv\Scripts\python.exe"
+while (-not (Select-String -Path out\train_ann_syn_th0.1.log -Pattern "best val MAE" -Quiet)) { Start-Sleep 10 }
+& $py -m src.train --model snn --dataset synthetic --tag syn_long_th0.02 --set dvs.threshold=0.02 --set datasets.synthetic.clip_seconds=30 --set snn.seq_len=150 --set snn.epochs=40 --set snn.batch_size=16 > out\train_snn_syn_long_th0.02.log 2>&1
+& $py -m src.train --model ann --dataset synthetic --tag syn_long_th0.02 --set dvs.threshold=0.02 --set datasets.synthetic.clip_seconds=30 --set snn.seq_len=150 --set snn.epochs=40 --set snn.batch_size=16 > out\train_ann_syn_long_th0.02.log 2>&1
+& $py -m src.evaluate --dataset scamps --split all --tag th0.02 --set dvs.threshold=0.02 --set eval.bootstrap_n=1000 --ckpt-snn "out\ckpt_snn_syn_th0.02_*.pt" --ckpt-ann "out\ckpt_ann_syn_th0.02_*.pt" > out\eval_scamps_th0.02.log 2>&1
+& $py -m src.evaluate --dataset synthetic --split test --tag th0.02 --set dvs.threshold=0.02 --set datasets.synthetic.clip_seconds=30 --set eval.bootstrap_n=1000 --ckpt-snn "out\ckpt_snn_syn_th0.02_*.pt" --ckpt-ann "out\ckpt_ann_syn_th0.02_*.pt" > out\eval_syn_th0.02.log 2>&1
+& $py -m src.evaluate --dataset scamps --split all --tag th0.05 --set dvs.threshold=0.05 --set eval.bootstrap_n=1000 --ckpt-snn "out\ckpt_snn_syn_th0.05_*.pt" --ckpt-ann "out\ckpt_ann_syn_th0.05_*.pt" > out\eval_scamps_th0.05.log 2>&1
+& $py -m src.evaluate --dataset synthetic --split test --tag th0.05 --set dvs.threshold=0.05 --set datasets.synthetic.clip_seconds=30 --set eval.bootstrap_n=1000 --ckpt-snn "out\ckpt_snn_syn_th0.05_*.pt" --ckpt-ann "out\ckpt_ann_syn_th0.05_*.pt" > out\eval_syn_th0.05.log 2>&1
+& $py -m src.evaluate --dataset scamps --split all --tag th0.1 --set dvs.threshold=0.1 --set eval.bootstrap_n=1000 --ckpt-snn "out\ckpt_snn_syn_th0.1_*.pt" --ckpt-ann "out\ckpt_ann_syn_th0.1_*.pt" > out\eval_scamps_th0.1.log 2>&1
+& $py -m src.evaluate --dataset synthetic --split test --tag th0.1 --set dvs.threshold=0.1 --set datasets.synthetic.clip_seconds=30 --set eval.bootstrap_n=1000 --ckpt-snn "out\ckpt_snn_syn_th0.1_*.pt" --ckpt-ann "out\ckpt_ann_syn_th0.1_*.pt" > out\eval_syn_th0.1.log 2>&1
+& $py -m src.evaluate --dataset scamps --split all --tag long0.02 --set dvs.threshold=0.02 --set eval.bootstrap_n=1000 --ckpt-snn "out\ckpt_snn_syn_long_th0.02_*.pt" --ckpt-ann "out\ckpt_ann_syn_long_th0.02_*.pt" > out\eval_scamps_long.log 2>&1
+& $py -m src.evaluate --aggregate "out/results_scamps-all_th*.json" > out\aggregate.log 2>&1

@@ -1,0 +1,561 @@
+{
+ "command": "python scripts/reconcile_windows.py",
+ "splits": {
+  "val": {
+   "totals": {
+    "table": 1202,
+    "eval_all": 1240,
+    "eval_valid": 1239,
+    "stored_all": 1240,
+    "stored_valid": 1239
+   },
+   "clips": [
+    {
+     "clip": "mcd:2110_before",
+     "fs": 29.97,
+     "frames_table": 1798,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:2110_after",
+     "fs": 29.97,
+     "frames_table": 1798,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:2527_before",
+     "fs": 29.87,
+     "frames_table": 1792,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:2527_after",
+     "fs": 29.71,
+     "frames_table": 1782,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:3150_before",
+     "fs": 29.92,
+     "frames_table": 1795,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:3150_after",
+     "fs": 29.98,
+     "frames_table": 1798,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:3448_before",
+     "fs": 29.67,
+     "frames_table": 1780,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:3448_after",
+     "fs": 29.74,
+     "frames_table": 1784,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:3656_before",
+     "fs": 29.92,
+     "frames_table": 1794,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:3656_after",
+     "fs": 29.92,
+     "frames_table": 1795,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:4225_before",
+     "fs": 29.97,
+     "frames_table": 1798,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:4225_after",
+     "fs": 29.92,
+     "frames_table": 1794,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:4937_before",
+     "fs": 29.55,
+     "frames_table": 1772,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:4937_after",
+     "fs": 29.87,
+     "frames_table": 1792,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7231_before",
+     "fs": 29.8,
+     "frames_table": 1787,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7231_after",
+     "fs": 29.98,
+     "frames_table": 1798,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7568_before",
+     "fs": 29.95,
+     "frames_table": 1796,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7568_after",
+     "fs": 29.9,
+     "frames_table": 1793,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7637_before",
+     "fs": 29.64,
+     "frames_table": 1778,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7637_after",
+     "fs": 29.71,
+     "frames_table": 1782,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:8772_before",
+     "fs": 18.41,
+     "frames_table": 1104,
+     "frames_eval": 1794,
+     "table_valid": 52,
+     "eval_windows": 90,
+     "eval_valid": 89,
+     "stored_windows": 90,
+     "stored_valid": 89
+    },
+    {
+     "clip": "mcd:8772_after",
+     "fs": 29.82,
+     "frames_table": 1789,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:9286_before",
+     "fs": 29.8,
+     "frames_table": 1787,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:9286_after",
+     "fs": 29.94,
+     "frames_table": 1796,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    }
+   ],
+   "clips_with_difference": [
+    "mcd:8772_before"
+   ]
+  },
+  "test": {
+   "totals": {
+    "table": 1197,
+    "eval_all": 1202,
+    "eval_valid": 1198,
+    "stored_all": 1202,
+    "stored_valid": 1198
+   },
+   "clips": [
+    {
+     "clip": "mcd:1097_before",
+     "fs": 29.62,
+     "frames_table": 1777,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:1097_after",
+     "fs": 29.84,
+     "frames_table": 1790,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:1399_before",
+     "fs": 29.97,
+     "frames_table": 1798,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:1399_after",
+     "fs": 29.88,
+     "frames_table": 1792,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:1981_before",
+     "fs": 29.74,
+     "frames_table": 1784,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:1981_after",
+     "fs": 29.76,
+     "frames_table": 1785,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:4087_before",
+     "fs": 29.78,
+     "frames_table": 1786,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:4087_after",
+     "fs": 29.98,
+     "frames_table": 1798,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:4397_before",
+     "fs": 29.76,
+     "frames_table": 1785,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:4397_after",
+     "fs": 29.98,
+     "frames_table": 1798,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:5223_before",
+     "fs": 29.27,
+     "frames_table": 1756,
+     "frames_eval": 1794,
+     "table_valid": 51,
+     "eval_windows": 52,
+     "eval_valid": 52,
+     "stored_windows": 52,
+     "stored_valid": 52
+    },
+    {
+     "clip": "mcd:5223_after",
+     "fs": 29.61,
+     "frames_table": 1776,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:5644_before",
+     "fs": 29.82,
+     "frames_table": 1788,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:5644_after",
+     "fs": 29.9,
+     "frames_table": 1793,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7539_before",
+     "fs": 29.94,
+     "frames_table": 1796,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7539_after",
+     "fs": 30.0,
+     "frames_table": 1799,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7769_before",
+     "fs": 29.89,
+     "frames_table": 1793,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:7769_after",
+     "fs": 29.9,
+     "frames_table": 1794,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:8370_before",
+     "fs": 29.94,
+     "frames_table": 1796,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:8370_after",
+     "fs": 29.81,
+     "frames_table": 1788,
+     "frames_eval": 1794,
+     "table_valid": 46,
+     "eval_windows": 50,
+     "eval_valid": 46,
+     "stored_windows": 50,
+     "stored_valid": 46
+    },
+    {
+     "clip": "mcd:8412_before",
+     "fs": 29.63,
+     "frames_table": 1778,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:8412_after",
+     "fs": 29.77,
+     "frames_table": 1785,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:8834_before",
+     "fs": 29.88,
+     "frames_table": 1792,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    },
+    {
+     "clip": "mcd:8834_after",
+     "fs": 29.71,
+     "frames_table": 1782,
+     "frames_eval": 1794,
+     "table_valid": 50,
+     "eval_windows": 50,
+     "eval_valid": 50,
+     "stored_windows": 50,
+     "stored_valid": 50
+    }
+   ],
+   "clips_with_difference": [
+    "mcd:5223_before"
+   ]
+  }
+ }
+}

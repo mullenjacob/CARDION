@@ -1,0 +1,22 @@
+# environments, caches, local data
+.venv/
+tools/
+third_party/
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+sessions/
+validation_data/
+data/raw/
+data/cache/
+data/events/
+models/face_landmarker.task
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+*.egg-info/
+.idea/
+.vscode/

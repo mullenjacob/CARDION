@@ -1,0 +1,121 @@
+{
+  "run_id": "20261025-121321-5092",
+  "created": "20261025-121440",
+  "passed": 18,
+  "total": 18,
+  "all_passed": true,
+  "results": [
+    {
+      "check": "models load",
+      "passed": true,
+      "detail": "SNN and ANN checkpoints loaded",
+      "seconds": 0.0
+    },
+    {
+      "check": "web UI served",
+      "passed": true,
+      "detail": "UI, script and stylesheet served",
+      "seconds": 0.2
+    },
+    {
+      "check": "cross-site POST blocked",
+      "passed": true,
+      "detail": "cross-site style POST rejected",
+      "seconds": 0.0
+    },
+    {
+      "check": "quality gating logic",
+      "passed": true,
+      "detail": "no number is shown when data, light, motion, signal or agreement is inadequate",
+      "seconds": 0.0
+    },
+    {
+      "check": "demo source reaches a reliable, correct estimate",
+      "passed": true,
+      "detail": "estimate 73.8 BPM vs simulated truth 72.0 (|err| 1.8 <= 3.0)",
+      "seconds": 7.1
+    },
+    {
+      "check": "all methods report an estimate",
+      "passed": true,
+      "detail": "rgb_green=74, rgb_pos=74, rgb_chrom=74, event_green=72, event_pos=74, snn=93, ann=72",
+      "seconds": 0.0
+    },
+    {
+      "check": "event methods pause/resume",
+      "passed": true,
+      "detail": "event/neural methods can be paused and resumed without stopping the RGB path",
+      "seconds": 3.1
+    },
+    {
+      "check": "preview frames served",
+      "passed": true,
+      "detail": "RGB and event previews served",
+      "seconds": 0.0
+    },
+    {
+      "check": "recording + export",
+      "passed": true,
+      "detail": "session saved: ['annotated.mp4', 'estimates.csv', 'plots.png', 'summary.json']",
+      "seconds": 5.4
+    },
+    {
+      "check": "video file analysis matches known pulse",
+      "passed": true,
+      "detail": "median reliable estimate 84.4 vs known 84.0 BPM (16 estimates)",
+      "seconds": 19.7
+    },
+    {
+      "check": "bad/missing video handled",
+      "passed": true,
+      "detail": "unreadable and missing files reported without crashing",
+      "seconds": 0.5
+    },
+    {
+      "check": "camera failure handled",
+      "passed": true,
+      "detail": "missing camera produces a clear message (no hardware was opened for real)",
+      "seconds": 0.0
+    },
+    {
+      "check": "camera enumeration (mocked)",
+      "passed": true,
+      "detail": "camera enumeration handles absent devices",
+      "seconds": 0.0
+    },
+    {
+      "check": "live-camera code path with a recorded real face",
+      "passed": true,
+      "detail": "live-camera path: 190 frames at 30.3 fps, face tracked, status 'Collecting data'",
+      "seconds": 6.5
+    },
+    {
+      "check": "camera check (UI button backend)",
+      "passed": true,
+      "detail": "camera check ran: Windows camera privacy setting=PASS, open=PASS, frames=PASS, picture=PASS, face=PASS, pulse pipeline=PASS",
+      "seconds": 8.4
+    },
+    {
+      "check": "positioning guidance (moved face, second face)",
+      "passed": true,
+      "detail": "good framing -> no advice; face moved right -> \"Move slightly right.\"; second face -> measurement paused, no BPM shown",
+      "seconds": 7.0
+    },
+    {
+      "check": "validation mode session and report",
+      "passed": true,
+      "detail": "consent required; bad value refused; 20 s session completed with 18 estimates and a report; no accuracy claimed without reference readings",
+      "seconds": 20.6
+    },
+    {
+      "check": "launcher files present",
+      "passed": true,
+      "detail": "launchers and doctor present; launch.ps1 is ASCII",
+      "seconds": 0.0
+    }
+  ],
+  "not_tested": [
+    "real webcam hardware (never opened by the self-test)",
+    "real event-camera hardware (none is used)"
+  ]
+}

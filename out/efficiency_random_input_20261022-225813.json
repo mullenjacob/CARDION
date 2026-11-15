@@ -1,0 +1,38 @@
+[
+  {
+    "model": "SpikingPulseNet",
+    "params": 18289,
+    "steps": 30,
+    "batch": 1,
+    "dense_macs": 7313280,
+    "dense_flops": 14626560,
+    "sops": 187442.0,
+    "activity_per_layer": [
+      0.0007975260416666667,
+      6.510416666666667e-05,
+      0.0
+    ],
+    "input_events": 3711.0,
+    "latency_ms_per_window": 303.71499998727813,
+    "latency_ms_per_step": 10.123833332909271,
+    "energy_uj": 0.1686978
+  },
+  {
+    "model": "AnnPulseNet",
+    "params": 18289,
+    "steps": 30,
+    "batch": 1,
+    "dense_macs": 7313280,
+    "dense_flops": 14626560,
+    "sops": null,
+    "activity_per_layer": [
+      0.475,
+      0.2967122395833333,
+      0.4583333333333333
+    ],
+    "input_events": 3711.0,
+    "latency_ms_per_window": 164.690800011158,
+    "latency_ms_per_step": 5.489693333705266,
+    "energy_uj": 33.641087999999996
+  }
+]

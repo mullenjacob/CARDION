@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrrrr}\toprule
+ & \multicolumn{3}{c}{validation MAE (BPM)} & \multicolumn{3}{c}{test MAE (BPM)} \\
+method & $\theta$=0.02 & 0.05 & 0.1 & 0.02 & 0.05 & 0.1 \\\midrule
+RGB green & \multicolumn{3}{c}{15.2} & \multicolumn{3}{c}{14.7} \\
+RGB CHROM & \multicolumn{3}{c}{14.0} & \multicolumn{3}{c}{9.3} \\
+RGB POS & \multicolumn{3}{c}{6.3} & \multicolumn{3}{c}{5.8} \\
+event green & 23.9 & \textbf{23.9} & 25.0 & 23.7 & \textbf{25.4} & 25.7 \\
+event POS & \textbf{18.3} & 18.7 & 20.0 & \textbf{16.1} & 18.9 & 21.2 \\
+ANN & 15.7 & \textbf{11.5} & 14.0 & 15.6 & \textbf{12.8} & 14.6 \\
+SNN & 22.4 & 21.0 & \textbf{19.6} & 20.2 & 22.7 & \textbf{18.9} \\
+\bottomrule\end{tabular}

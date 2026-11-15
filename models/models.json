@@ -1,0 +1,16 @@
+{
+  "snn": {
+    "source_checkpoint": "ckpt_snn_mcd_th0.05_s1_20261023-221044.pt",
+    "val_mae_bpm": 14.965017106241291,
+    "epoch": 6,
+    "threshold": 0.05,
+    "note": "Trained on 36 real subjects of MCD-rPPG (72 clips, simulated events at threshold 0.05); selected on 12 validation subjects (MAE 15.0 BPM). Not better than the RGB methods - shown for comparison."
+  },
+  "ann": {
+    "source_checkpoint": "ckpt_ann_mcd_th0.05_s1_20261023-222047.pt",
+    "val_mae_bpm": 10.8802318033748,
+    "epoch": 24,
+    "threshold": 0.05,
+    "note": "Trained on 36 real subjects of MCD-rPPG (72 clips, simulated events at threshold 0.05); selected on 12 validation subjects (MAE 10.9 BPM). Not better than the RGB methods - shown for comparison."
+  }
+}

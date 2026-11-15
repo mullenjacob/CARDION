@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying paper, please cite them. This is a preprint-stage research codebase; it has not been peer reviewed and is not a medical device."
+title: "CARDION: simulated-event and spiking heart-rate estimators versus frame-based rPPG on real webcam video"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: "Mullen"
+    given-names: "Jacob"
+license: MIT
+abstract: "Research code, trained models, saved results and manuscript for a subject-disjoint study of whether events emulated from compressed webcam video preserve the pulse, whether a spiking neural network helps, and how a reliability gate affects reported accuracy and availability. Events are simulated; no event-camera hardware is used."
+keywords:
+  - remote photoplethysmography
+  - event camera
+  - spiking neural network
+  - simulated events
+  - heart rate
+  - reliability gating
+  - reproducibility
+
+repository-code: https://github.com/mullenjacob/CARDION
+url: https://doi.org/10.5281/zenodo.23647425
+doi: 10.5281/zenodo.23647425

@@ -1,0 +1,10 @@
+{
+  "base_mean": 11.535227035285665,
+  "base_min": 10.8802318033748,
+  "base_max": 12.30513704845446,
+  "n_base": 3,
+  "big_best_val": 11.37401178710244,
+  "n_big": 1,
+  "windows_per_epoch_base": 128,
+  "windows_per_epoch_big": 512
+}
